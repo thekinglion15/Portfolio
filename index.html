@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="dark_theme">
+    <header class="header" data-header>
+        <div class="container">
+            <h1 class="h1 logo">
+                <a href="#">
+                    <img src="assets/logos/King Lion.png" alt="The King Lion Logo">
+                    The King Lion<span>.</span>
+                </a>
+            </h1>
+            <div class="navbar-actions">
+                <select name="language" id="lang">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+                <button class="theme-btn" aria-label="Cambiar tema" title="Cambiar tema" data-theme-btn>
+                    <span class="icon"></span>
+                </button>
+            </div>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" title="Toggle menu" data-nav-toggle-btn>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li><a href="#home" class="navbar-link active" style="--navAni:1">Home.</a></li>
+                    <li><a href="#about" class="navbar-link" style="--navAni:2">About.</a></li>
+                    <li><a href="#education" class="navbar-link" style="--navAni:3">Education.</a></li>
+                    <li><a href="#skills" class="navbar-link" style="--navAni:4">Skills.</a></li>
+                    <li><a href="#works" class="navbar-link" style="--navAni:5">Works.</a></li>
+                    <li><a href="#contact" class="navbar-link" style="--navAni:6">Contact.</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="hero" id="home">
+                <figure class="hero-banner">
+                    <picture>
+                        <source srcset="assets/images/profile.png" media="(min-width: 768px)">
+                        <source srcset="assets/images/profile-md.png" media="(min-width: 500px)">
+                        <img src="assets/images/profile-sm.png" alt="Profile photo" class="w-100">
+                    </picture>
+                </figure>
+                <div class="hero-content">
+                    <h3 class="h3 hero-title hi">Hi, It's Me</h3>
+                    <h2 class="h2 hero-title name">Gabriel De León</h2>
+                    <p href="#contact" class="btn btn-primary p">Get in touch</p>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <figure class="about-banner">
+                    <img src="assets/images/aboutBanner.png" alt="Profile photo" class="w-100">
+                </figure>
+                <div class="about-content section-content">
+                    <p class="section-subtitle">About Me</p>
+                    <h2 class="h3 section-title">Lorem Ipsum</h2>
+                    <p class="section-text">
+                        Video provides a powerful way to help you prove your point.
+                        When you click Online Video, you can paste in the embed code
+                        for the video you want to add. You can also type a keyword to
+                        search online for the video that best fits your document.
+                    </p>
+                    <div class="btn-group">
+                        <button class="btn btn-secundary">Hire me</button>
+                        <button class="btn btn-primary">Download CV</button>
+                    </div>
+                </div>
+            </section>
+            
+        </article>
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+</body>
+</html>
