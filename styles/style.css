@@ -435,6 +435,7 @@ main {
 .hero-banner {
     max-width: 500px;
     width: 125%;
+    margin-top: 50px;;
     margin-bottom: 30px;
 }
 
