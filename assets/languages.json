@@ -1,0 +1,22 @@
+{
+    "es": {
+        "selectOptionSpanish": "Español",
+        "selectOptionEnglish": "Ingles",
+        "navbarHome": "Inicio",
+        "navbarAbout": "Sobre mi",
+        "navbarEducation": "Educación",
+        "navbarSkills": "Habilidades",
+        "navbarWorks": "Proyectos",
+        "navbarContact": "Contacto"
+    },
+    "en": {
+        "selectOptionSpanish": "Spanish",
+        "selectOptionEnglish": "English",
+        "navbarHome": "Home",
+        "navbarAbout": "About",
+        "navbarEducation": "Education",
+        "navbarSkills": "Skills",
+        "navbarWorks": "Works",
+        "navbarContact": "Contact"
+    }
+}
