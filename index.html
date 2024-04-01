@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <!--<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">-->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animation.css">
     <link rel="stylesheet" href="styles/media.css">
 </head>
 <body id="top" class="dark_theme">
     <!--Header-->
-    <header class="header" data-header>
+    <header class="header">
         <!--Navbar-->
         <div class="container">
             <h1 class="h1 logo">
@@ -26,9 +26,9 @@
                 </a>
             </h1>
             <div class="navbar-actions">
-                <select name="language" id="lang">
-                    <option value="es">Español</option>
-                    <option value="en">Inglés</option>
+                <select name="language" id="lang" onchange="changeLanguage()">
+                    <option value="en" id="en">Inglés</option>
+                    <option value="es" id="es">Español</option>
                 </select>
                 <button class="theme-btn" aria-label="Cambiar tema" title="Cambiar tema" data-theme-btn>
                     <span class="icon"></span>
@@ -41,12 +41,12 @@
             </button>
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
-                    <li><a href="#home" class="navbar-link active" style="--navAni:1">Home.</a></li>
-                    <li><a href="#about" class="navbar-link" style="--navAni:2">About.</a></li>
-                    <li><a href="#education" class="navbar-link" style="--navAni:3">Education.</a></li>
-                    <li><a href="#skills" class="navbar-link" style="--navAni:4">Skills.</a></li>
-                    <li><a href="#works" class="navbar-link" style="--navAni:5">Works.</a></li>
-                    <li><a href="#contact" class="navbar-link" style="--navAni:6">Contact.</a></li>
+                    <li><a href="#home" class="navbar-link active" id="nav1" style="--navAni:1">Home</a></li>
+                    <li><a href="#about" class="navbar-link" id="nav2" style="--navAni:2">About</a></li>
+                    <li><a href="#education" class="navbar-link" id="nav3" style="--navAni:3">Education</a></li>
+                    <li><a href="#skills" class="navbar-link" id="nav4" style="--navAni:4">Skills</a></li>
+                    <li><a href="#works" class="navbar-link" id="nav5" style="--navAni:5">Works</a></li>
+                    <li><a href="#contact" class="navbar-link" id="nav6" style="--navAni:6">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +66,7 @@
                 <div class="hero-content">
                     <h3 class="h3 hero-title hi">Hi, It's Me</h3>
                     <h2 class="h2 hero-title name">Gabriel De León</h2>
-                    <p href="#contact" class="btn btn-primary p">Get in touch</p>
+                    <a href="#contact" class="btn btn-primary p">Get in touch</a>
                 </div>
             </section>
             <!--About-->
@@ -84,7 +84,9 @@
                         search online for the video that best fits your document.
                     </p>
                     <div class="btn-group">
-                        <button class="btn btn-secondary">Hire me</button>
+                        <button class="btn btn-secondary">
+                            <a href="#contact" style="color: white;">Hire me</a>
+                        </button>
                         <button class="btn btn-primary">Download CV</button>
                     </div>
                 </div>
@@ -113,7 +115,7 @@
                         graphics change to match your new theme. When you apply styles, your
                         headings change to match the new theme.
                     </p>
-                    <div class="skills-toggle">
+                    <div class="skills-toggle" data-toggle-box>
                         <button class="toggle-btn active" data-toggle-btn>Skills</button>
                         <button class="toggle-btn" data-toggle-btn>Tools</button>
                     </div>
@@ -410,13 +412,13 @@
                         <li>
                             <ul class="contact-social-list">
                                 <li>
-                                    <a href="#" class="contact-social-link">
+                                    <a href="https://www.linkedin.com/in/gabrieldeleon15/" class="contact-social-link" target="_blank">
                                         <div class="tooltip">LinkedIn</div>
                                         <i class="bi-linkedin"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="contact-social-link">
+                                    <a href="https://github.com/thekinglion15" class="contact-social-link" target="_blank">
                                         <div class="tooltip">GitHub</div>
                                         <i class="bi-github"></i>
                                     </a>
@@ -474,8 +476,9 @@
         <i class="bi-arrow-up"></i>
     </a>
     <!--Scripts-->
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/languages.js"></script><!--
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>-->
 </body>
 </html>
