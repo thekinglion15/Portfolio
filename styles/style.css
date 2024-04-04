@@ -374,7 +374,7 @@ body.active {
 
 .navbar.active {
     top: 0;
-    visibility: hidden;
+    visibility: visible;
     transition-delay: 0s;
 }
 
@@ -416,6 +416,12 @@ body.active {
 
 .navbar-link:is(:hover, :focus)::before {
     width: 100%;
+}
+
+.label-lang {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-family: var(--ff-poppins);
 }
 
 main {
