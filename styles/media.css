@@ -6,7 +6,7 @@
     .section-title {
         max-width: 380px;
     }
-    .project-list{
+    .project-list {
         column-count: 2;
         column-gap: 25px;
     }
