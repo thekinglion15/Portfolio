@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">-->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animation.css">
     <link rel="stylesheet" href="styles/media.css">
@@ -26,9 +25,10 @@
                 </a>
             </h1>
             <div class="navbar-actions">
+                <label class="label-lang" for="lang" id="label-lang">Idioma</label>
                 <select name="language" id="lang" onchange="changeLanguage()">
-                    <option value="en" id="en">Inglés</option>
                     <option value="es" id="es">Español</option>
+                    <option value="en" id="en">English</option>
                 </select>
                 <button class="theme-btn" aria-label="Cambiar tema" title="Cambiar tema" data-theme-btn>
                     <span class="icon"></span>
@@ -477,8 +477,6 @@
     </a>
     <!--Scripts-->
     <script src="scripts/script.js"></script>
-    <script src="scripts/languages.js"></script><!--
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>-->
+    <script src="scripts/languages.js"></script>
 </body>
 </html>
