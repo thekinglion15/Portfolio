@@ -1,22 +1,139 @@
 {
     "es": {
-        "selectOptionSpanish": "Español",
-        "selectOptionEnglish": "Ingles",
-        "navbarHome": "Inicio",
-        "navbarAbout": "Sobre mi",
-        "navbarEducation": "Educación",
-        "navbarSkills": "Habilidades",
-        "navbarWorks": "Proyectos",
-        "navbarContact": "Contacto"
+        "selectOption": {
+            "label": "Idioma",
+            "spanish": "Español",
+            "english": "Ingles"
+        },
+        "navbar": {
+            "home": "Inicio",
+            "about": "Sobre Mi",
+            "education": "Educación",
+            "skills": "Habilidades",
+            "works": "Proyectos",
+            "contact": "Contacto"
+        },
+        "header": {
+            "hi": "Hola, Soy Yo",
+            "touch": "Ponte en contacto"
+        },
+        "about": {
+            "subtitle":"Sobre mi",
+            "title": "De las Ideas a las Realidades",
+            "text": "Hola, soy Gabriel De León, con una pasión imparable por C# y el desarrollo web, convierto ideas en realidades impactantes con soluciones creativas. Siempre sediento de conocimiento, me aventuro a nuevos territorios aprendiendo habilidades, herramientas y conceptos. Mis poderes no se limitan al desarrollo; También domino las artes de las bases de datos, el lenguaje serpiente (Python) y la ciberseguridad. ¡Prepárate para quedar impresionado por mis habilidades!",
+            "hire": "Contratame",
+            "download":"Descargar CV"
+        },
+        "education": {
+            "subtitle": "Educación",
+            "title": "Lorem Ipsum",
+            "text": "To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries."
+        },
+        "skills": {
+            "subtitle": "Habilidades",
+            "title": "¿Cuáles son mis Habilidades de Programación?",
+            "text": "Me especializo en diseñar interfaces sencillas, centradas en el usuario y adaptables que agilizan la ejecución de tareas, utilizando estas tecnologías.",
+            "skills": "Habilidades",
+            "tools": "Herramientas"
+        },
+        "works": {
+            "subtitle": "Mis Proyectos",
+            "title": "¡Mira mis proyectos que te sorprenderán!",
+            "text": "He trabajado en varios proyectos como programador junior. Durante estos proyectos, he aprendido a desarrollar interfaces limpias y simples que son fáciles de entender para usuarios no técnicos. Mi enfoque ha sido crear sitios web de calidad que puedan funcionar a largo plazo, y he documentado cuidadosamente mi trabajo para seguir mejorando. Estoy emocionado por seguir creciendo como desarrollador y enfrentar nuevos desafíos en el futuro.",
+            "project1": {
+                "name": "Encriptador de Texto",
+                "date": "Enero 2024"
+            },
+            "link": "Cargar más proyectos"
+        },
+        "contact": {
+            "subtitle": "Contacto",
+            "title": "¿Necesitas Ayuda? Contáctame",
+            "text": "Ponte en contacto y déjame saber cómo puedo ayudarte. Complete el formulario y me pondré en contacto lo antes posible.",
+            "address": "Dirección:",
+            "addressMe": "Castillo, Provincia Duarte, República Dominicana",
+            "phone": "Teléfono:",
+            "email": "Correo Electrónico:",
+            "form": {
+                "name": "Nombre",
+                "email": "Correo Electrónico",
+                "phone": "Teléfono",
+                "message": "Mensaje",
+                "textarea": "Escribe el mensaje...",
+                "send": "Enviar"
+            }
+        },
+        "footer": {
+            "copyright": "Todos los derechos reservados."
+        }
     },
     "en": {
-        "selectOptionSpanish": "Spanish",
-        "selectOptionEnglish": "English",
-        "navbarHome": "Home",
-        "navbarAbout": "About",
-        "navbarEducation": "Education",
-        "navbarSkills": "Skills",
-        "navbarWorks": "Works",
-        "navbarContact": "Contact"
+        "selectOption": {
+            "label": "Language",
+            "spanish": "Spanish",
+            "english": "English"
+        },
+        "navbar": {
+            "home": "Home",
+            "about": "About",
+            "education": "Education",
+            "skills": "Skills",
+            "works": "Works",
+            "contact": "Contact"
+        },
+        "header": {
+            "hi": "Hi, It's Me",
+            "touch": "Get in touch"
+        },
+        "about": {
+            "subtitle": "About me",
+            "title": "From Ideas to Realities",
+            "text": "Hello, I'm Gabriel De León, with an unstoppable passion for C# and web development, I turn ideas into impactful realities with creative solutions. Always thirsty for knowledge, I venture into new territories learning skills, tools, and concepts. My powers are not limited to development; I also master the arts of databases, the snake language (Python), and cybersecurity. Get ready to be impressed by my skills!",
+            "hire": "Hire me",
+            "download": "Download CV"
+        },
+        "education": {
+            "subtitle": "Education",
+            "title": "Lorem Ipsum",
+            "text": "To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries."
+        },
+        "skills": {
+            "subtitle": "Skills",
+            "title": "What are my Programming Skills?",
+            "text": "I specialize in designing simple, user-centered and adaptable interfaces that speed up the execution of tasks, using these technologies.",
+            "skills": "Skills",
+            "tools": "Tools"
+        },
+        "works": {
+            "subtitle": "My Works",
+            "title": "View my projects that will astonish you!",
+            "text": "I have worked on several projects as a junior programmer. During these projects, I have learned to develop clean and simple interfaces that are easy to understand for non-technical users. My focus has been on creating quality websites that can perform over the long term, and I have carefully documented my work to continue improving. I'm excited to continue growing as a developer and take on new challenges in the future.",
+            "project1": {
+                "name": "Text Encryptor",
+                "date": "January 2024"
+            },
+            "link": "Load more works"
+        },
+        "contact": {
+            "subtitle": "Contact",
+            "title": "Do You Need Help? Contact Me",
+            "text": "Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.",
+            "address": "Address:",
+            "addressMe": "Castillo, Province Duarte, Dominican Republic",
+            "phone": "Phone:",
+            "email": "Email:",
+            "form": {
+                "name": "Name",
+                "email": "Email",
+                "phone": "Phone",
+                "message": "Message",
+                "textarea": "Write message...",
+                "send": "Send"
+            }
+        },
+        "footer": {
+            "copyright": "All rights reserved"
+        }
     }
 }
+
