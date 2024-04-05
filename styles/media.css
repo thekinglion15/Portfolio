@@ -28,6 +28,9 @@
         align-items: center;
         gap: 20px;
     }
+    .hero-content {
+        margin-top: 0px;
+    }
     .about .btn {
         max-width: max-content;
     }
@@ -37,6 +40,11 @@
     .contact-form {
         max-width: 450px;
         margin-inline: auto;
+    }
+    .footer .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
@@ -119,6 +127,7 @@
         --color-primary: var(--white);
         position: absolute;
         top: 50%;
+        margin-top: 10%;
         filter: drop-shadow(2px 4px 10px var(--black));
     }
     .hero .btn-primary:is(:hover, :focus) {
