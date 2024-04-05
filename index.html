@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap">
@@ -15,20 +15,19 @@
 </head>
 <body id="top" class="dark_theme">
     <!--Header-->
-    <header class="header">
+    <header class="header" data-header>
         <!--Navbar-->
         <div class="container">
             <h1 class="h1 logo">
                 <a href="#">
-                    <img src="assets/logos/King Lion.png" alt="">
-                    The King Lion<span>.</span>
+                    <img src="assets/logos/logo2.png" id="logo-header" alt="The King Lion">
                 </a>
             </h1>
             <div class="navbar-actions">
-                <label class="label-lang" for="lang" id="label-lang">Idioma</label>
+                <label class="label-lang" for="lang" id="label-lang">Language</label>
                 <select name="language" id="lang" onchange="changeLanguage()">
-                    <option value="es" id="es">Español</option>
                     <option value="en" id="en">English</option>
+                    <option value="es" id="es">Español</option>
                 </select>
                 <button class="theme-btn" aria-label="Cambiar tema" title="Cambiar tema" data-theme-btn>
                     <span class="icon"></span>
@@ -64,9 +63,9 @@
                     </picture>
                 </figure>
                 <div class="hero-content">
-                    <h3 class="h3 hero-title hi">Hi, It's Me</h3>
+                    <h3 class="h3 hero-title hi" id="hi">Hi, It's Me</h3>
                     <h2 class="h2 hero-title name">Gabriel De León</h2>
-                    <a href="#contact" class="btn btn-primary p">Get in touch</a>
+                    <a href="#contact" class="btn btn-primary a" id="touch">Get in touch</a>
                 </div>
             </section>
             <!--About-->
@@ -75,28 +74,29 @@
                     <img src="assets/images/about-banner.png" alt="Profile photo" class="w-100">
                 </figure>
                 <div class="about-content section-content">
-                    <p class="section-subtitle">About Me</p>
-                    <h2 class="h3 section-title">Lorem Ipsum</h2>
-                    <p class="section-text">
-                        Video provides a powerful way to help you prove your point.
-                        When you click Online Video, you can paste in the embed code
-                        for the video you want to add. You can also type a keyword to
-                        search online for the video that best fits your document.
+                    <p class="section-subtitle" id="about-subtitle">About Me</p>
+                    <h2 class="h3 section-title" id="about-title">From Ideas to Realities</h2>
+                    <p class="section-text" id="about-text">
+                        Hello, I'm Gabriel De León, with an unstoppable passion for C# and web development,
+                        I turn ideas into impactful realities with creative solutions. Always thirsty for
+                        knowledge, I venture into new territories learning skills, tools, and concepts.
+                        My powers are not limited to development; I also master the arts of databases, the
+                        snake language (Python), and cybersecurity. Get ready to be impressed by my skills!
                     </p>
                     <div class="btn-group">
                         <button class="btn btn-secondary">
-                            <a href="#contact" style="color: white;">Hire me</a>
+                            <a href="#contact" style="color: white;" id="hire">Hire me</a>
                         </button>
-                        <button class="btn btn-primary">Download CV</button>
+                        <button class="btn btn-primary" id="download">Download CV</button>
                     </div>
                 </div>
             </section>
             <!--Education-->
             <section class="education" id="education">
                 <div class="education-content section-content">
-                    <p class="section-subtitle">Education</p>
-                    <h2 class="h3 section-title">Lorem Ipsum</h2>
-                    <p class="section-text">
+                    <p class="section-subtitle" id="education-subtitle">Education</p>
+                    <h2 class="h3 section-title" id="education-title">Lorem Ipsum</h2>
+                    <p class="section-text" id="education-text">
                         To make your document look professionally produced, Word provides header,
                         footer, cover page, and text box designs that complement each other.
                         For example, you can add a matching cover page, header, and sidebar. Click
@@ -107,17 +107,15 @@
             <!--Skills-->
             <section class="skills" id="skills">
                 <div class="skills-content section-content">
-                    <p class="section-subtitle">Skills</p>
-                    <h2 class="h3 section-title">Lorem Ipsum</h2>
-                    <p class="section-text">
-                        Themes and styles also help keep your document coordinated. When you
-                        click Design and choose a new Theme, the pictures, charts, and SmartArt
-                        graphics change to match your new theme. When you apply styles, your
-                        headings change to match the new theme.
+                    <p class="section-subtitle" id="skills-subtitle">Skills</p>
+                    <h2 class="h3 section-title" id="skills-title">What are my Programming Skills?</h2>
+                    <p class="section-text" id="skills-text">
+                        I specialize in designing simple, user-centered and adaptable interfaces
+                        that speed up the execution of tasks, using these technologies.
                     </p>
                     <div class="skills-toggle" data-toggle-box>
-                        <button class="toggle-btn active" data-toggle-btn>Skills</button>
-                        <button class="toggle-btn" data-toggle-btn>Tools</button>
+                        <button class="toggle-btn active" id="skills-skills" data-toggle-btn>Skills</button>
+                        <button class="toggle-btn" id="skills-tools" data-toggle-btn>Tools</button>
                     </div>
                 </div>
                 <div class="skills-box" data-skills-box>
@@ -340,42 +338,42 @@
                 <ul class="project-list">
                     <li>
                         <div class="project-content section-content">
-                            <p class="section-subtitle">My Works</p>
-                            <h2 class="h3 section-title">Lorem Ipsum</h2>
-                            <p class="section-text">
-                                Save time in Word with new buttons that show up where you need them.
-                                To change the way a picture fits in your document, click it and a button
-                                for layout options appears next to it. When you work on a table, click
-                                where you want to add a row or a column, and then click the plus sign.
+                            <p class="section-subtitle" id="works-subtitle">My Works</p>
+                            <h2 class="h3 section-title" id="works-title">View my projects that will astonish you!</h2>
+                            <p class="section-text" id="works-text">
+                                I have worked on several projects as a junior programmer. During these projects,
+                                I have learned to develop clean and simple interfaces that are easy to understand
+                                for non-technical users. My focus has been on creating quality websites that can
+                                perform over the long term, and I have carefully documented my work to continue
+                                improving. I'm excited to continue growing as a developer and take on new
+                                challenges in the future.
                             </p>
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="project-card">
+                        <a href="https://github.com/thekinglion15/encriptadorTexto" target="_blank" class="project-card">
                             <figure class="card-banner">
                                 <img src="assets/images/project1.png" alt="Project 1" class="w-100">
                             </figure>
                             <div class="card-content">
-                                <h3 class="h4 card-title">Lorem Ipsum Dolor</h3>
-                                <time class="publish-date" datetime="2022-04">April 2022</time>
+                                <h3 class="h4 card-title" id="project1-name">Text Encryptor</h3>
+                                <time class="publish-date" datetime="2022-04" id="project1-date">January 2024</time>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <button class="load-more">Load more works</button>
+                        <button class="load-more" id="works-link">Load more works</button>
                     </li>
                 </ul>
             </section>
             <!--Contact-->
             <section class="contact" id="contact">
                 <div class="contact-content section-content">
-                    <p class="section-subtitle">Contact</p>
-                    <h2 class="h3 section-title">Lorem Ipsum</h2>
-                    <p class="section-text">
-                        Reading is easier, too, in the new Reading view. You can collapse
-                        parts of the document and focus on the text you want. If you need to
-                        stop reading before you reach the end, Word remembers where you left
-                        off - even on another device.
+                    <p class="section-subtitle" id="contact-subtitle">Contact</p>
+                    <h2 class="h3 section-title" id="contact-title">Do You Need Help? Contact Me</h2>
+                    <p class="section-text" id="contact-text">
+                        Get in touch and let me know how i can help. Fill out the form and i’ll
+                        be in touch as soon as possible.
                     </p>
                     <ul class="contact-list">
                         <li class="contact-list-item">
@@ -383,9 +381,9 @@
                                 <i class="bi-geo-alt"></i>
                             </div>
                             <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Address:</h3>
-                                <address class="contact-info">
-                                    941 Saqrqorish Road, Alandalos, Granata, Wa 47122-4194
+                                <h3 class="h4 contact-item-title" id="contact-address">Address:</h3>
+                                <address class="contact-info" id="contact-address-me">
+                                    Castillo, Province Duarte, Dominican Republic
                                 </address>
                             </div>
                         </li>
@@ -394,9 +392,9 @@
                                 <i class="bi-telephone"></i>
                             </div>
                             <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Phone:</h3>
-                                <a href="tel:0123456789" class="contact-info">(01) 234 567 89</a>
-                                <a href="tel:9876543210" class="contact-info">(98) 765 432 10</a>
+                                <h3 class="h4 contact-item-title" id="contact-phone">Phone:</h3>
+                                <a href="tel:0123456789" class="contact-info">(829) 770-0018</a>
+                                <a href="tel:9876543210" class="contact-info">(809) 899-3671</a>
                             </div>
                         </li>
                         <li class="contact-list-item">
@@ -404,9 +402,8 @@
                                 <i class="bi-envelope-at"></i>
                             </div>
                             <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Email:</h3>
-                                <a href="mailto:asd@asd.com" class="contact-info">asd@asd.com</a>
-                                <a href="mailto:asd@asd.com" class="contact-info">asd@asd.com</a>
+                                <h3 class="h4 contact-item-title" id="contact-email">Email:</h3>
+                                <a href="mailto:asd@asd.com" class="contact-info">gabrieldeleon1500gmail.com</a>
                             </div>
                         </li>
                         <li>
@@ -429,34 +426,34 @@
                 </div>
                 <form action="" class="contact-form">
                     <div class="form-wrapper">
-                        <label for="name" class="form-label">Name</label>
+                        <label for="name" class="form-label" id="form-name">Name</label>
                         <div class="input-wrapper">
-                            <input type="text" name="name" class="input-field" id="name" placeholder="John Harvard" required>
+                            <input type="text" name="name" class="input-field" id="name" placeholder="John Johnson" required>
                             <i class="bi-person-circle"></i>
                         </div>
                     </div>
                     <div class="form-wrapper">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label" id="form-email">Email</label>
                         <div class="input-wrapper">
-                            <input type="email" name="email" class="input-field" id="email" placeholder="johnharvard@gmail.com" required>
+                            <input type="email" name="email" class="input-field" id="email" placeholder="johnjohnson@gmail.com" required>
                             <i class="bi-envelope-fill"></i>
                         </div>
                     </div>
                     <div class="form-wrapper">
-                        <label for="phone" class="form-label">Phone</label>
+                        <label for="phone" class="form-label" id="form-phone">Phone</label>
                         <div class="input-wrapper">
-                            <input type="phone" name="phone" class="input-field" id="phone" placeholder="(012) 345-6789" required>
+                            <input type="phone" name="phone" class="input-field" id="phone" placeholder="(809) 000-1111" required>
                             <i class="bi-telephone-fill"></i>
                         </div>
                     </div>
                     <div class="form-wrapper">
-                        <label for="message" class="form-label">Message</label>
+                        <label for="message" class="form-label" id="form-message">Message</label>
                         <div class="input-wrapper">
                             <textarea name="message" class="input-field" id="message" placeholder="Write message..." required></textarea>
                             <i class="bi-chat-fill"></i>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary" id="form-send">Send</button>
                 </form>
             </section>
         </article>
@@ -465,10 +462,16 @@
     <footer class="footer">
         <div class="container">
             <p class="h1 logo">
-                <a href="#">The King Lion<span>.</span></a>
+                <a href="#">
+                    <img src="assets/logos/Logo2.png" id="logo-footer" alt="The King Lion">
+                </a>
             </p>
             <p class="copyright">
-                &copy; 2024 <a href="#">The King Lion</a>. All rights reserved.
+                <span>
+                    &copy; <span id="year"></span>
+                    <a href="#">The King Lion</a>.
+                    <span id="copyright">All rights reserved.</span>
+                </span>
             </p>
         </div>
     </footer>
