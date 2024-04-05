@@ -4,12 +4,15 @@ const elemToggleFunc = function(elem) {
     elem.classList.toggle("active");
 }
 
+const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
 window.addEventListener("scroll", function() {
     if(window.scrollY >= 10) {
+        header.classList.add("active");
         goTopBtn.classList.add("active");
     }
     else {
+        header.classList.remove("active");
         goTopBtn.classList.remove("active");
     }
 });
@@ -42,11 +45,15 @@ themeToggleBtn.addEventListener("click", function() {
         document.body.classList.remove("dark_theme");
         document.body.classList.add("light_theme");
         localStorage.setItem("theme", "light_theme");
+        document.getElementById("logo-header").src = "../assets/logos/Logo1.png";
+        document.getElementById("logo-footer").src = "../assets/logos/Logo1.png";
     }
     else {
         document.body.classList.remove("light_theme");
         document.body.classList.add("dark_theme");
-        localStorage.setItem("theme", "dark_theme")
+        localStorage.setItem("theme", "dark_theme");
+        document.getElementById("logo-header").src = "../assets/logos/Logo2.png";
+        document.getElementById("logo-footer").src = "../assets/logos/Logo2.png";
     }
 });
 
@@ -54,9 +61,16 @@ if(localStorage.getItem("theme") === "light_theme") {
     themeToggleBtn.classList.add("active");
     document.body.classList.add("light_theme");
     document.body.classList.remove("dark_theme");
+    document.getElementById("logo-header").src = "../assets/logos/Logo1.png";
+    document.getElementById("logo-footer").src = "../assets/logos/Logo1.png";
 }
 else {
     themeToggleBtn.classList.remove("active");
     document.body.classList.add("dark_theme");
     document.body.classList.remove("light_theme");
+    document.getElementById("logo-header").src = "../assets/logos/Logo2.png";
+    document.getElementById("logo-footer").src = "../assets/logos/Logo2.png";
 }
+
+const today = new Date();
+document.getElementById("year").innerHTML = today.getFullYear();
