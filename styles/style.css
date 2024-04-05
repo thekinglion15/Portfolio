@@ -27,7 +27,7 @@ body.dark_theme {
     --bg-secondary: hsl(0, 0%, 19%);
     --color-primary: hsl(0, 0%, 100%);
     --color-secondary: hsl(0, 0%, 62%);
-    --card-shadow: hsla(0, 0%, 0%, 0.4);
+    --card-shadow: hsla(0, 0%, 20%, 0.4);
     --input-bg: hsl(0, 0%, 16%);
     --shadow: 10px 10px 40px var(--card-shadow);
 }
@@ -268,10 +268,8 @@ body.active {
     font-family: var(--ff-saira-stencil-one);
 }
 
-.logo span {
-    display: inline-block;
-    color: var(--raw-seinna);
-    margin-left: 2px;
+.logo a img {
+    width: 220px;
 }
 
 .navbar-actions {
@@ -447,7 +445,6 @@ main {
 
 .hero-content {
     max-width: 450px;
-    margin-top: 10%;
 }
 
 .hero-title {
@@ -467,7 +464,7 @@ main {
     animation-delay: 1s;
 }
 
-.p {
+.a {
     opacity: 0;
     animation: topSideAni 1.5s ease forwards;
 }
@@ -508,6 +505,9 @@ main {
 }
 
 .skills-toggle {
+    --width-toggle-before: 93px;
+    --width-toggle-active-before: 94px;
+    --left-toggle: 98px;
     background: var(--bg-secondary);
     position: relative;
     width: max-content;
@@ -526,7 +526,7 @@ main {
     top: 5px;
     left: 5px;
     bottom: 5px;
-    width: 93px;
+    width: var(--width-toggle);
     background: var(--raw-seinna);
     border-radius: 100px;
     transition: var(--transition);
@@ -534,8 +534,8 @@ main {
 }
 
 .skills-toggle.active::before {
-    left: 98px;
-    width: 94px;
+    left: var(--left-toggle);
+    width: var(--width-toggle-active-before);
 }
 
 .toggle-btn {
@@ -593,7 +593,7 @@ main {
     position: relative;
     overflow: hidden;
     border-radius: var(--radius-12);
-    box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);
+    box-shadow: 2px 4px 6px var(--card-shadow);
 }
 
 .project-card::after {
@@ -633,7 +633,7 @@ main {
 
 .project-card .publish-date {
     font-size: var(--fs-6);
-    color: var(--bg-primary);
+    color: var(--color-primary);
     transition-delay: 0s;
 }
 
@@ -723,6 +723,13 @@ main {
     opacity: 1;
 }
 
+.contact-form {
+    background: var(--bg-secondary);
+    padding: 20px;
+    border-radius: var(--radius-12);
+    box-shadow: var(--shadow);
+}
+
 .form-wrapper {
     margin-bottom: 25px;
 }
@@ -793,6 +800,10 @@ textarea.input-field {
 .copyright {
     color: var(--color-secondary);
     line-height: 1.6;
+}
+
+.copyright span {
+    display: inline-block;
 }
 
 .copyright a {
