@@ -9,20 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Styles Sheets -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animation.css">
     <link rel="stylesheet" href="styles/media.css">
 </head>
 <body id="top" class="dark_theme">
-    <!--Header-->
+    <!-- Header -->
     <header class="header" data-header>
-        <!--Navbar-->
+        <!-- Navbar -->
         <div class="container">
-            <h1 class="h1 logo">
+            <!-- Logo -->
+            <p class="h1 logo">
                 <a href="#">
                     <img src="assets/logos/logo2.png" id="logo-header" alt="The King Lion">
                 </a>
-            </h1>
+            </p>
+            <!-- Languege Selector -->
             <div class="navbar-actions">
                 <label class="label-lang" for="lang" id="label-lang">Language</label>
                 <select name="language" id="lang" onchange="changeLanguage()">
@@ -33,13 +36,15 @@
                     <span class="icon"></span>
                 </button>
             </div>
+            <!-- Toggle Button -->
             <button class="nav-toggle-btn" aria-label="Toggle menu" title="Toggle menu" data-nav-toggle-btn>
                 <span class="one"></span>
                 <span class="two"></span>
                 <span class="three"></span>
             </button>
+            <!-- Menu -->
             <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
+                <ul class="navbar-list" data-nav-link>
                     <li><a href="#home" class="navbar-link active" id="nav1" style="--navAni:1">Home</a></li>
                     <li><a href="#about" class="navbar-link" id="nav2" style="--navAni:2">About</a></li>
                     <li><a href="#education" class="navbar-link" id="nav3" style="--navAni:3">Education</a></li>
@@ -50,10 +55,10 @@
             </nav>
         </div>
     </header>
-    <!--Main-->
+    <!-- Main -->
     <main>
         <article class="container">
-            <!--Home-->
+            <!-- Home -->
             <section class="hero" id="home">
                 <figure class="hero-banner">
                     <picture>
@@ -68,7 +73,7 @@
                     <a href="#contact" class="btn btn-primary a" id="touch">Get in touch</a>
                 </div>
             </section>
-            <!--About-->
+            <!-- About -->
             <section class="about" id="about">
                 <figure class="about-banner">
                     <img src="assets/images/about-banner.png" alt="Profile photo" class="w-100">
@@ -87,24 +92,34 @@
                         <button class="btn btn-secondary">
                             <a href="#contact" style="color: white;" id="hire">Hire me</a>
                         </button>
-                        <button class="btn btn-primary" id="download">Download CV</button>
+                        <button class="btn btn-primary">
+                            <a href="#" style="color: var(--color-primary);" id="download">Download CV</a>
+                        </button>
                     </div>
                 </div>
             </section>
-            <!--Education-->
+            <!-- Education -->
             <section class="education" id="education">
                 <div class="education-content section-content">
                     <p class="section-subtitle" id="education-subtitle">Education</p>
-                    <h2 class="h3 section-title" id="education-title">Lorem Ipsum</h2>
+                    <h2 class="h3 section-title" id="education-title">Poor is the One Who Lacks Knowledge</h2>
                     <p class="section-text" id="education-text">
-                        To make your document look professionally produced, Word provides header,
-                        footer, cover page, and text box designs that complement each other.
-                        For example, you can add a matching cover page, header, and sidebar. Click
-                        Insert and then choose the elements you want from the different galleries.
+                        I am a Magna Cum Laude graduate of the Bachelor's Degree in Computer Science from the
+                        Autonomous University of Santo Domingo (UASD), with a solid background in computer
+                        science fundamentals and technical skills. In addition, I have complemented my education
+                        with specialized courses from recognized institutions such as MESCYT, Harvard, ITLA, Google
+                        and CISCO, etc. My passion for continuous learning drives me to stay up to date on the latest
+                        technological trends and constantly seek challenges that allow me to contribute to the
+                        evolving technological world.
                     </p>
                 </div>
+                <!-- Generated by generator.js-->
+                <div class="education-container">
+                    <div class="education-column"></div>
+                    <div class="education-column"></div>
+                </div>
             </section>
-            <!--Skills-->
+            <!-- Skills -->
             <section class="skills" id="skills">
                 <div class="skills-content section-content">
                     <p class="section-subtitle" id="skills-subtitle">Skills</p>
@@ -118,226 +133,17 @@
                         <button class="toggle-btn" id="skills-tools" data-toggle-btn>Tools</button>
                     </div>
                 </div>
+                <!-- Generated by generator.js-->
                 <div class="skills-box" data-skills-box>
-                    <ul class="skills-list">
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">C#</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/csharp.png" alt="C#">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">C++</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/cpp.png" alt="C++">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">C</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/c.png" alt="C">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Python</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/python.png" alt="Python">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Java</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/java.png" alt="Java">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">HTML5</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/html5.png" alt="HTML5">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">CSS3</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/css3.png" alt="CSS3">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">JavaScript</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/javascript.png" alt="JavaScript">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">TypeScript</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/typescript.png" alt="TypeScript">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Bootstrap</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/bootstrap.png" alt="Bootstrap">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Angular</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/angular.png" alt="Angular">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">React</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/react.png" alt="React">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">MySQL</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/mysql.png" alt="MySQL">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">SQLite</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/sqlite.png" alt="SQLite">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">SQL Server</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/sqlserver.png" alt="SQL Server">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">MongoDB</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/mongodb.png" alt="MongoDB">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">PostgreSQL</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/postgresql.png" alt="PostgreSQL">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">MariaDB</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/mariadb.png" alt="MariaDB">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="tools-list">
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">.NET</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/dotnet.png" alt=".NET">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Git</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/git.png" alt="Git">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Linux</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/linux.png" alt="Linux">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">VS Code</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/vscode.png" alt="VS Code">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Photoshop</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/photoshop.png" alt="Photoshop">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Command Line</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/command-line.png" alt="Command Line">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Trello</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/trello.png" alt="Trello">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="skill-card">
-                                <div class="tooltip">Selenium</div>
-                                <div class="card-icon">
-                                    <img src="assets/logos/selenium.png" alt="Selenium">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    <ul class="skills-list"></ul>
+                    <ul class="tools-list"></ul>
                 </div>
             </section>
-            <!--Works-->
-            <section class="project" id="works">
-                <ul class="project-list">
+            <!-- Works -->
+            <section class="work" id="works">
+                <ul class="work-list">
                     <li>
-                        <div class="project-content section-content">
+                        <div class="work-content section-content">
                             <p class="section-subtitle" id="works-subtitle">My Works</p>
                             <h2 class="h3 section-title" id="works-title">View my projects that will astonish you!</h2>
                             <p class="section-text" id="works-text">
@@ -361,12 +167,12 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <button class="load-more" id="works-link">Load more works</button>
-                    </li>
+                    </li>-->
                 </ul>
             </section>
-            <!--Contact-->
+            <!-- Contact -->
             <section class="contact" id="contact">
                 <div class="contact-content section-content">
                     <p class="section-subtitle" id="contact-subtitle">Contact</p>
@@ -424,7 +230,8 @@
                         </li>
                     </ul>
                 </div>
-                <form action="" class="contact-form">
+                <!-- Form -->
+                <form class="contact-form">
                     <div class="form-wrapper">
                         <label for="name" class="form-label" id="form-name">Name</label>
                         <div class="input-wrapper">
@@ -442,7 +249,7 @@
                     <div class="form-wrapper">
                         <label for="phone" class="form-label" id="form-phone">Phone</label>
                         <div class="input-wrapper">
-                            <input type="phone" name="phone" class="input-field" id="phone" placeholder="(809) 000-1111" required>
+                            <input type="tel" name="phone" class="input-field" id="phone" placeholder="(809) 000-1111" required>
                             <i class="bi-telephone-fill"></i>
                         </div>
                     </div>
@@ -458,7 +265,7 @@
             </section>
         </article>
     </main>
-    <!--Footer-->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p class="h1 logo">
@@ -478,8 +285,9 @@
     <a href="#top" class="go-top" data-go-top title="Go to top">
         <i class="bi-arrow-up"></i>
     </a>
-    <!--Scripts-->
-    <script src="scripts/script.js"></script>
+    <!-- Scripts -->
+    <script src="scripts/features.js"></script>
+    <script src="scripts/generator.js"></script>
     <script src="scripts/languages.js"></script>
 </body>
 </html>
