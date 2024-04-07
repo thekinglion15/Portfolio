@@ -1,3 +1,18 @@
+@media (max-width: 550px) {
+    #label-lang {
+        visibility: hidden;
+    }
+    .summary-title {
+        visibility: hidden;
+    }
+    details {
+        width: 120px;
+    }
+        .logo a img {
+            width: 150px;
+        }
+}
+
 @media (min-width: 550px) {
     .container {
         max-width: 550px;
@@ -6,11 +21,11 @@
     .section-title {
         max-width: 380px;
     }
-    .project-list {
+    .work-list {
         column-count: 2;
         column-gap: 25px;
     }
-    .project-list>li:first-child {
+    .work-list>li:first-child {
         column-span: all;
     }
 }
@@ -142,6 +157,12 @@
     .about-banner {
         margin-bottom: 0;
     }
+    .education {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        align-items: center;
+        gap: 30px;
+    }
     .skills {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -154,10 +175,10 @@
     .skills-toggle {
         margin-inline: 0;
     }
-    .project-list {
+    .work-list {
         column-count: 3;
     }
-    .project-list>li:first-child {
+    .work-list>li:first-child {
         column-span: unset;
         margin: 25px;
         margin-left: 0;
@@ -183,6 +204,12 @@
     }
     .footer .logo {
         margin-bottom: 0;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+    .logo a img {
+        width: 150px;
     }
 }
 
