@@ -580,7 +580,7 @@ summary img {
     top: 5px;
     left: 5px;
     bottom: 5px;
-    width: var(--width-toggle);
+    width: var(--width-toggle-before);
     background: var(--raw-seinna);
     border-radius: 100px;
     transition: var(--transition);
