@@ -8,7 +8,7 @@ let languages = {};
  * Loads data from the languages.json file and updates the interface with the selected language.
  */
 function loadLanguage() {
-    fetch("../assets/languages.json").then(response => response.json()).then(data => {
+    fetch("assets/languages.json").then(response => response.json()).then(data => {
         languages = data;
         changeLanguage();
     }).catch(error => console.log("Error:", error));
