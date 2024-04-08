@@ -99,12 +99,12 @@ function setSkillsLang(skills, language) {
 
     const elemento = document.querySelector('.skills-toggle');
     if(language == "en") {
-        elemento.style.setProperty("--width-toggle", "93px");
+        elemento.style.setProperty("--width-toggle-before", "93px");
         elemento.style.setProperty("--width-toggle-active-before", "94px");
         elemento.style.setProperty("--left-toggle", "98px");
     }
     else if(language == "es") {
-        elemento.style.setProperty("--width-toggle", "150px");
+        elemento.style.setProperty("--width-toggle-before", "150px");
         elemento.style.setProperty("--width-toggle-active-before", "159px");
         elemento.style.setProperty("--left-toggle", "160px");
     }
