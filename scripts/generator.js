@@ -58,7 +58,7 @@ const educations = [
     { logo: "oracle-one.png", institution: "Oracle ONE", programs: ["Principiante en Programación G6 - ONE", "Lógica de programación con JavaScript"] },
     { logo: startfree, institution: "freeCodeCamp", programs: ["Responsive Web Design", "Foundational C#"] },
     { logo: "aprende.png", institution: "Aprende", programs: ["Diplomado Técnico en sistemas informáticos", "Diplomado Técnico instalador de red de acceso"] },
-    { logo: "linkedin-learning.png", institution: "LinkedIn Learning", programs: ["Fundamentos de la carrera de administración de sistemas", "Fundamentos profesionales de analisis empresarial", "Fundamentos profesionales de IA generativa", "Fundamentos profesionales del analisis de datos", "Fundamentos profesionales del desarrollo de software", "Fundamentos profesionales en ciberseguridad"] },
+    { logo: "linkedin-learning.png", institution: "LinkedIn Learning", programs: ["Fundamentos de la carrera de administración de sistemas", "Fundamentos profesionales de analisis empresarial", "Fundamentos profesionales de asistencia administrativa", "Fundamentos profesionales de IA generativa", "Fundamentos profesionales del analisis de datos", "Fundamentos profesionales del desarrollo de software", "Fundamentos profesionales en ciberseguridad"] },
     { logo: "sololearn.png", institution: "SoloLearn", programs: ["C Intermediate", "C# Intermediate", "C++ Intermediate", "Java Intermediate", "JavaScript Intermediate", "SQL Intermediate", "Intermediate Python", "Responsive Web Design", "Web Development", "Ruby", "Kotlin", "PHP", "HTML", "CSS", "Angular", "Go"] }
 ];
 
