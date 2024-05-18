@@ -44,6 +44,14 @@
                 "name": "Encriptador de Texto",
                 "date": "Enero 2024"
             },
+            "project2": {
+                "name": "Portafolio",
+                "date": "Abril 2024"
+            },
+            "project3": {
+                "name": "AluraGeek",
+                "date": "Mayo 2024"
+            },
             "link": "Cargar más proyectos"
         },
         "contact": {
@@ -111,6 +119,14 @@
             "project1": {
                 "name": "Text Encryptor",
                 "date": "January 2024"
+            },
+            "project2": {
+                "name": "Portfolio",
+                "date": "April 2024"
+            },
+            "project3": {
+                "name": "AluraGeek",
+                "date": "May 2024"
             },
             "link": "Load more works"
         },
