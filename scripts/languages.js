@@ -120,6 +120,10 @@ function setWorksLang(works) {
     document.getElementById("works-text").innerText = works.text;
     document.getElementById("project1-name").innerText = works.project1.name;
     document.getElementById("project1-date").innerText = works.project1.date;
+    document.getElementById("project2-name").innerText = works.project2.name;
+    document.getElementById("project2-date").innerText = works.project2.date;
+    document.getElementById("project3-name").innerText = works.project3.name;
+    document.getElementById("project3-date").innerText = works.project3.date;
     //document.getElementById("works-link").innerText = works.link;
 }
 
