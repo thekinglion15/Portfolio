@@ -27,9 +27,9 @@ body.dark_theme {
     --bg-secondary: hsl(0, 0%, 19%);
     --color-primary: hsl(0, 0%, 100%);
     --color-secondary: hsl(0, 0%, 62%);
-    --card-shadow: hsla(0, 0%, 20%, 0.4);
+    --card-shadow: hsla(0, 0%, 255%, 0.1);
     --input-bg: hsl(0, 0%, 16%);
-    --shadow: 10px 10px 40px var(--card-shadow);
+    --shadow: 5px 5px 40px var(--card-shadow);
 }
 
 body.light_theme {
@@ -516,7 +516,7 @@ details {
     transition: all 0.3s ease-in-out;
     display: block;
     margin-bottom: 10px;
-    box-shadow: var(--shadow);
+    box-shadow: 2px 4px 10px var(--card-shadow);
 }
 
 summary {
@@ -547,6 +547,14 @@ summary img {
     padding: 0.2em 1em 1em 1em;
     font-weight: 300;
     line-height: 1.4;
+}
+
+.program {
+    cursor: pointer;
+}
+
+.program:hover {
+    color: var(--color-primary);
 }
 
 /* Skills */
@@ -887,4 +895,57 @@ textarea.input-field {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal-title {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+#modal-title img {
+    margin-right: 10px;
+    max-width: 30px;
+    height: auto;
+}
+
+.modal-content {
+    padding: 20px;
+    max-width: 700px;
+    background-color: var(--bg-secondary);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.close {
+    color: var(--color-primary);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
 }
