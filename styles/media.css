@@ -8,9 +8,19 @@
     details {
         width: 120px;
     }
-        .logo a img {
-            width: 150px;
-        }
+    .logo a img {
+        width: 150px;
+    }
+    .modal-content {
+        margin: 20% auto;
+        width: 90%;
+    }
+    #modal-title {
+        font-size: 1rem;
+    }
+    .close {
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 550px) {
@@ -27,6 +37,13 @@
     }
     .work-list>li:first-child {
         column-span: all;
+    }
+    .modal-content {
+        margin: 20% auto;
+        width: 85%;
+    }
+    #modal-title {
+        font-size: 1.1rem;
     }
 }
 
@@ -60,6 +77,10 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+    .modal-content {
+        margin: 15% auto;
+        width: 80%;
     }
 }
 
@@ -205,6 +226,13 @@
     .footer .logo {
         margin-bottom: 0;
     }
+    .modal-content {
+        margin: 15% auto;
+        width: 100%;
+    }
+    #modal-title {
+        font-size: 1.2rem;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1199px) {
@@ -222,5 +250,9 @@
     }
     .about-banner {
         max-width: 450px;
+    }
+    .modal-content {
+        margin: 8% auto;
+        width: 100%;
     }
 }
