@@ -50,7 +50,7 @@ const tools = [
  * Contains an array of educational institutions with their respective logos, names, and programs.
  */
 const educations = [
-    { logo: "uasd.png", institution: "UASD", programs: ["Licenciatura en Informática", "Diplomado en Ciberseguridad"] },
+    { logo: "uasd.png", institution: "UASD", programs: ["Licenciatura en Informática", "Diplomado en Ciberseguridad"]},
     { logo: "mescyt.png", institution: "MESCYT", programs: ["English Immersion Program"] },
     { logo: startItla, institution: "ITLA", programs: ["Ethical Hacking", "C#.Net Intermedio"] },
     { logo: "harvard.png", institution: "Harvard", programs: ["CS50's Introduction to Programming with Python", "CS50's Introduction to Databases with SQL"] },
@@ -63,6 +63,63 @@ const educations = [
     { logo: "linkedin-learning.png", institution: "LinkedIn Learning", programs: ["Fundamentos de la carrera de administración de sistemas", "Fundamentos profesionales de analisis empresarial", "Fundamentos profesionales de asistencia administrativa", "Fundamentos profesionales de IA generativa", "Fundamentos profesionales del analisis de datos", "Fundamentos profesionales del desarrollo de software", "Fundamentos profesionales en ciberseguridad"] },
     { logo: "sololearn.png", institution: "SoloLearn", programs: ["C Intermediate", "C# Intermediate", "C++ Intermediate", "Java Intermediate", "JavaScript Intermediate", "SQL Intermediate", "Intermediate Python", "Coding Foundations", "Responsive Web Design", "Web Development", "Web Developer with Angular", "Tech for Everyone", "Ruby", "Kotlin", "PHP", "HTML", "CSS", "Angular", "Go", "Swift 4"] }
 ];
+
+/**
+ * Contains an array of educational certificates.
+ */
+const certificates = {
+    "Licenciatura en Informática": "uasd_bachelor.png",
+    "Diplomado en Ciberseguridad": "ciberseguridad_uasd.jpg",
+    "English Immersion Program": "",
+    "Ethical Hacking": "ethical_hacking.jpg",
+    "C#.Net Intermedio": "csnet_intermedio.jpg",
+    "CS50's Introduction to Programming with Python": "cs50p.png",
+    "CS50's Introduction to Databases with SQL": "cs50sql.png",
+    "Cloud Computing": "cloud_computing.jpg",
+    "Desarrollo de Apps Móviles": "desarrollo_de_apps_moviles.jpg",
+    "Introducción al Desarrollo Web I": "desarrollo_web1.jpg",
+    "Introducción al Desarrollo Web II": "desarrollo_web2.jpg",
+    "Junior Cybersecurity Analyst Career Path": "junior_cybersecurity_analyst.jpg",
+    "Network Technician Career Path": "network_technician.jpg",
+    "Python Essentials 1": "python_essentials1.jpg",
+    "Python Essentials 2": "python_essentials2.jpg",
+    "English For IT 1": "english_for_it1.jpg",
+    "Principiante en Programación G6 - ONE": "principiante_en_programacion.jpg",
+    "Front End G6 - ONE": "front_end.jpg",
+    "Lógica de programación con JavaScript": "logica_de_programacion.jpg",
+    "Responsive Web Design": "responsive_web_design_free.jpg",
+    "Front End Development Libraries": "front_end_development_libraries.jpg",
+    "Foundational C#": "foundational_cs.jpg",
+    "EF SET Certificate": "efset_certificate.png",
+    "Diplomado Técnico en sistemas informáticos": "tecnico_en_sistemas_informaticos.jpg",
+    "Diplomado Técnico instalador de red de acceso": "tecnico_instalador_de_red_de_acceso.jpg",
+    "Fundamentos de la carrera de administración de sistemas": "administracion_de_sistemas.jpg",
+    "Fundamentos profesionales de analisis empresarial": "analisis_empresarial.jpg",
+    "Fundamentos profesionales de asistencia administrativa": "asistencia_administrativa.jpg",
+    "Fundamentos profesionales de IA generativa": "ia_generativa.jpg",
+    "Fundamentos profesionales del analisis de datos": "analisis_de_datos.jpg",
+    "Fundamentos profesionales del desarrollo de software": "desarrollo_de_software.jpg",
+    "Fundamentos profesionales en ciberseguridad": "ciberseguridad.jpg",
+    "C Intermediate": "c_intermediate.jpg",
+    "C# Intermediate": "cs_intermediate.jpg",
+    "C++ Intermediate": "cpp_intermediate.jpg",
+    "Java Intermediate": "java_intermediate.jpg",
+    "JavaScript Intermediate": "js_intermediate.jpg",
+    "SQL Intermediate": "sql_intermediate.jpg",
+    "Intermediate Python": "intermediate_python.jpg",
+    "Coding Foundations": "coding_foundations.jpg",
+    "Web Development": "web_development.jpg",
+    "Web Developer with Angular": "web_developer_with_angular.jpg",
+    "Tech for Everyone": "tech_for_everyone.jpg",
+    "Ruby": "ruby.jpg",
+    "Kotlin": "kotlin.jpg",
+    "PHP": "php.jpg",
+    "HTML": "html.jpg",
+    "CSS": "css.jpg",
+    "Angular": "angular.jpg",
+    "Go": "go.jpg",
+    "Swift 4": "swift.jpg"
+};
 
 /**
  * Enables the theme toggle functionality.
@@ -173,6 +230,12 @@ educations.forEach((item, index) => {
     item.programs.forEach((program) => {
         const p = document.createElement("p");
         p.textContent = `● ${program}`;
+        p.classList.add("program");
+
+        p.addEventListener("click", () => {;
+            openModal(program, certificates[program], item.logo, item.institution);
+        });
+
         content.appendChild(p);
     });
 
@@ -192,4 +255,28 @@ educations.forEach((item, index) => {
 document.querySelectorAll('details').forEach((el) => {
     const accordion = new Accordion(el);
     el.accordion = accordion;
+});
+
+
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalImage = document.getElementById("modal-image");
+const closeButton = document.querySelector(".close");
+
+function openModal(program, imageUrl, iconUrl, institution) {
+    modalTitle.innerHTML = `<img src="assets/logos/${iconUrl}" alt="${institution}">${program}`;
+    modalImage.src = `assets/education/${imageUrl}`;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+closeButton.addEventListener("click", closeModal);
+
+window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+        closeModal();
+    }
 });
