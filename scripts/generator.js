@@ -55,13 +55,13 @@ const educations = [
     { logo: startItla, institution: "ITLA", programs: ["Ethical Hacking", "C#.Net Intermedio"] },
     { logo: "harvard.png", institution: "Harvard", programs: ["CS50x", "CS50's Introduction to Programming with Python", "CS50's Introduction to Databases with SQL"] },
     { logo: "google-activate.png", institution: "Google Activate", programs: ["Cloud Computing", "Desarrollo de Apps Móviles", "Introducción al Desarrollo Web I", "Introducción al Desarrollo Web II"] },
-    { logo: "cisco.png", institution: "CISCO", programs: ["Junior Cybersecurity Analyst Career Path", "Network Technician Career Path", "Python Essentials 1", "Python Essentials 2", "English For IT 1"] },
-    { logo: "oracle-one.png", institution: "Oracle ONE", programs: ["Principiante en Programación G6 - ONE", "Front End G6 - ONE", "Lógica de programación con JavaScript"] },
+    { logo: "cisco.png", institution: "CISCO", programs: ["Junior Cybersecurity Analyst Career Path", "Network Technician Career Path", "Python Essentials 2", "JavaScript Essentials 2","English For IT 2", "Data Analytics Essentials", "Ethical Hacker"] },
+    { logo: "oracle-one.png", institution: "Oracle ONE", programs: ["Front End G6 - ONE", "Lógica de programación con JavaScript", "Principiante en Programación G6 - ONE"] },
     { logo: startFree, institution: "freeCodeCamp", programs: ["Responsive Web Design", "Front End Development Libraries", "Foundational C#"] },
     { logo: startEfset, institution: "EF SET", programs: ["EF SET Certificate"] },
     { logo: "aprende.png", institution: "Aprende", programs: ["Diplomado Técnico en sistemas informáticos", "Diplomado Técnico instalador de red de acceso"] },
     { logo: "linkedin-learning.png", institution: "LinkedIn Learning", programs: ["Fundamentos de la carrera de administración de sistemas", "Fundamentos profesionales de analisis empresarial", "Fundamentos profesionales de asistencia administrativa", "Fundamentos profesionales de IA generativa", "Fundamentos profesionales del analisis de datos", "Fundamentos profesionales del desarrollo de software", "Fundamentos profesionales en ciberseguridad"] },
-    { logo: "sololearn.png", institution: "SoloLearn", programs: ["C Intermediate", "C# Intermediate", "C++ Intermediate", "Java Intermediate", "JavaScript Intermediate", "SQL Intermediate", "Intermediate Python", "Coding Foundations", "Responsive Web Design", "Web Development", "Web Developer with Angular", "Tech for Everyone", "Ruby", "Kotlin", "PHP", "HTML", "CSS", "Angular", "Go", "Swift 4"] }
+    { logo: "sololearn.png", institution: "SoloLearn", programs: ["C Intermediate", "C# Intermediate", "C++ Intermediate", "Java Intermediate", "JavaScript Intermediate", "SQL Intermediate", "Intermediate Python", "Coding Foundations", "Data Programming", "Responsive Web Design", "Web Development", "Web Developer with Angular", "Tech for Everyone", "Ruby", "Kotlin", "PHP", "HTML", "CSS", "Angular", "Go", "Swift 4"] }
 ];
 
 /**
@@ -82,9 +82,11 @@ const certificates = {
     "Introducción al Desarrollo Web II": "desarrollo_web2.jpg",
     "Junior Cybersecurity Analyst Career Path": "junior_cybersecurity_analyst.jpg",
     "Network Technician Career Path": "network_technician.jpg",
-    "Python Essentials 1": "python_essentials1.jpg",
     "Python Essentials 2": "python_essentials2.jpg",
-    "English For IT 1": "english_for_it1.jpg",
+    "JavaScript Essentials 2": "javascript_essentials2.jpg",
+    "English For IT 2": "english_for_it2.jpg",
+    "Data Analytics Essentials": "data_analytics_essentials.jpg",
+    "Ethical Hacker": "ethical_hacker.jpg",
     "Principiante en Programación G6 - ONE": "principiante_en_programacion.jpg",
     "Front End G6 - ONE": "front_end.jpg",
     "Lógica de programación con JavaScript": "logica_de_programacion.jpg",
@@ -109,6 +111,7 @@ const certificates = {
     "SQL Intermediate": "sql_intermediate.jpg",
     "Intermediate Python": "intermediate_python.jpg",
     "Coding Foundations": "coding_foundations.jpg",
+    "Data Programming": "data_programming.jpg",
     "Web Development": "web_development.jpg",
     "Web Developer with Angular": "web_developer_with_angular.jpg",
     "Tech for Everyone": "tech_for_everyone.jpg",
