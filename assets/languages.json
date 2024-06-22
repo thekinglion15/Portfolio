@@ -52,7 +52,10 @@
                 "name": "AluraGeek",
                 "date": "Mayo 2024"
             },
-            "link": "Cargar más proyectos"
+            "project4": {
+                "name": "AluraFlix",
+                "date": "Junio 2024"
+            }
         },
         "contact": {
             "subtitle": "Contacto",
@@ -128,7 +131,10 @@
                 "name": "AluraGeek",
                 "date": "May 2024"
             },
-            "link": "Load more works"
+            "project4": {
+                "name": "AluraFlix",
+                "date": "June 2024"
+            }
         },
         "contact": {
             "subtitle": "Contact",
