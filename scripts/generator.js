@@ -56,11 +56,11 @@ const educations = [
     { logo: "harvard.png", institution: "Harvard", programs: ["CS50x", "CS50's Introduction to Game Development", "CS50's Introduction to Programming with Python", "CS50's Introduction to Databases with SQL", "CS50's Understanding Technology"] },
     { logo: "google-activate.png", institution: "Google Activate", programs: ["Cloud Computing", "Desarrollo de Apps Móviles", "Introducción al Desarrollo Web I", "Introducción al Desarrollo Web II"] },
     { logo: "cisco.png", institution: "CISCO", programs: ["Junior Cybersecurity Analyst Career Path", "Network Technician Career Path", "Python Essentials 2", "JavaScript Essentials 2","English For IT 2", "Data Analytics Essentials", "Ethical Hacker"] },
-    { logo: "oracle-one.png", institution: "Oracle ONE", programs: ["Programa Oracle Next Education", "React G6 - ONE", "Front End G6 - ONE", "Explora React con JavaScript", "Lógica de programación con JavaScript", "Principiante en Programación G6 - ONE"] },
+    { logo: "oracle-one.png", institution: "Oracle ONE", programs: ["Programa Oracle Next Education", "React G6 - ONE", "Front End G6 - ONE", "SQL con MySQL Server de Oracle - ONE", "Oracle Cloud Infrastructure - ONE", "IA Generativa - ONE", "Explora React con JavaScript", "Lógica de programación con JavaScript", "Principiante en Programación G6 - ONE"] },
     { logo: startFree, institution: "freeCodeCamp", programs: ["Responsive Web Design", "Front End Development Libraries", "Foundational C#"] },
     { logo: startEfset, institution: "EF SET", programs: ["EF SET Certificate"] },
     { logo: "aprende.png", institution: "Aprende", programs: ["Diplomado Técnico en sistemas informáticos", "Diplomado Técnico instalador de red de acceso"] },
-    { logo: "linkedin-learning.png", institution: "LinkedIn Learning", programs: ["Fundamentos de la carrera de administración de sistemas", "Fundamentos profesionales de analisis empresarial", "Fundamentos profesionales de asistencia administrativa", "Fundamentos profesionales de IA generativa", "Fundamentos profesionales del analisis de datos", "Fundamentos profesionales del desarrollo de software", "Fundamentos profesionales en ciberseguridad"] },
+    { logo: "linkedin-learning.png", institution: "LinkedIn Learning", programs: ["Fundamentos de la carrera de administración de sistemas", "Fundamentos profesionales de analisis empresarial", "Fundamentos profesionales de asistencia administrativa", "Fundamentos profesionales de gestión de proyectos", "Fundamentos profesionales de IA generativa", "Fundamentos profesionales del analisis de datos", "Fundamentos profesionales del desarrollo de software", "Fundamentos profesionales en ciberseguridad"] },
     { logo: "sololearn.png", institution: "SoloLearn", programs: ["C Intermediate", "C# Intermediate", "C++ Intermediate", "Java Intermediate", "JavaScript Intermediate", "SQL Intermediate", "Intermediate Python", "Coding Foundations", "Data Programming", "Responsive Web Design", "Web Development", "Web Developer with Angular", "Tech for Everyone", "Ruby", "Kotlin", "PHP", "HTML", "CSS", "Angular", "Go", "Swift 4"] }
 ];
 
@@ -94,6 +94,9 @@ const certificates = {
     "Principiante en Programación G6 - ONE": "principiante_en_programacion.jpg",
     "React G6 - ONE": "react.jpg",
     "Front End G6 - ONE": "front_end.jpg",
+    "SQL con MySQL Server de Oracle - ONE": "sql_con_mysql_server.jpg",
+    "Oracle Cloud Infrastructure - ONE": "oracle_cloud_infrastructure.jpg",
+    "IA Generativa - ONE" : "ia_generativa_one.jpg",
     "Explora React con JavaScript": "react_con_javascript.jpg",
     "Lógica de programación con JavaScript": "logica_de_programacion.jpg",
     "Responsive Web Design": "responsive_web_design_free.jpg",
@@ -105,6 +108,7 @@ const certificates = {
     "Fundamentos de la carrera de administración de sistemas": "administracion_de_sistemas.jpg",
     "Fundamentos profesionales de analisis empresarial": "analisis_empresarial.jpg",
     "Fundamentos profesionales de asistencia administrativa": "asistencia_administrativa.jpg",
+    "Fundamentos profesionales de gestión de proyectos": "gestion_de_proyectos.jpg",
     "Fundamentos profesionales de IA generativa": "ia_generativa.jpg",
     "Fundamentos profesionales del analisis de datos": "analisis_de_datos.jpg",
     "Fundamentos profesionales del desarrollo de software": "desarrollo_de_software.jpg",
