@@ -56,8 +56,10 @@ const educations = [
     { logo: "harvard.png", institution: "Harvard", programs: ["CS50x", "CS50's Introduction to Game Development", "CS50's Introduction to Programming with Python", "CS50's Introduction to Databases with SQL", "CS50's Understanding Technology"] },
     { logo: "google-activate.png", institution: "Google Activate", programs: ["Cloud Computing", "Desarrollo de Apps Móviles", "Introducción al Desarrollo Web I", "Introducción al Desarrollo Web II"] },
     { logo: "cisco.png", institution: "CISCO", programs: ["Junior Cybersecurity Analyst Career Path", "Network Technician Career Path", "Python Essentials 2", "JavaScript Essentials 2","English For IT 2", "Data Analytics Essentials", "Ethical Hacker"] },
-    { logo: "oracle-one.png", institution: "Oracle ONE", programs: ["Programa Oracle Next Education", "React G6 - ONE", "Front End G6 - ONE", "SQL con MySQL Server de Oracle - ONE", "Oracle Cloud Infrastructure - ONE", "IA Generativa - ONE", "Explora React con JavaScript", "Lógica de programación con JavaScript", "Principiante en Programación G6 - ONE"] },
     { logo: startFree, institution: "freeCodeCamp", programs: ["Responsive Web Design", "Front End Development Libraries", "Foundational C#"] },
+    { logo: "uteco.png", institution: "UTECO", programs: ["Especialidad en Habilitación Docente Modalidad Técnico-Profesional, para el Nivel Secundario, Mención Informática y Comunicaciones"] },
+    { logo: "microsoft.png", institution: "Microsoft Certified Educator", programs: ["Technology Literacy for Educators - 21st Century Learning Design"] },
+    { logo: "oracle-one.png", institution: "Oracle ONE", programs: ["Programa Oracle Next Education", "React G6 - ONE", "Front End G6 - ONE", "SQL con MySQL Server de Oracle - ONE", "Oracle Cloud Infrastructure - ONE", "IA Generativa - ONE", "Explora React con JavaScript", "Lógica de programación con JavaScript", "Principiante en Programación G6 - ONE"] },
     { logo: startEfset, institution: "EF SET", programs: ["EF SET Certificate"] },
     { logo: "aprende.png", institution: "Aprende", programs: ["Diplomado Técnico en sistemas informáticos", "Diplomado Técnico instalador de red de acceso", "Diplomado Técnico en Redes"] },
     { logo: "linkedin-learning.png", institution: "LinkedIn Learning", programs: ["Fundamentos de la carrera de administración de sistemas", "Fundamentos profesionales de analisis empresarial", "Fundamentos profesionales de asistencia administrativa", "Fundamentos profesionales de gestión de proyectos", "Fundamentos profesionales de IA generativa", "Fundamentos profesionales del analisis de datos", "Fundamentos profesionales del desarrollo de software", "Fundamentos profesionales en ciberseguridad", "Fundamentos profesionales tecnología sostenible", "Desarrolla tus habilidades de productividad con IA generativa"] },
@@ -90,6 +92,8 @@ const certificates = {
     "English For IT 2": "english_for_it2.jpg",
     "Data Analytics Essentials": "data_analytics_essentials.jpg",
     "Ethical Hacker": "ethical_hacker.jpg",
+    "Especialidad en Habilitación Docente Modalidad Técnico-Profesional, para el Nivel Secundario, Mención Informática y Comunicaciones": "",
+    "Technology Literacy for Educators - 21st Century Learning Design": "mce.jpg",
     "Programa Oracle Next Education": "programa_one.jpg",
     "Principiante en Programación G6 - ONE": "principiante_en_programacion.jpg",
     "React G6 - ONE": "react.jpg",
@@ -228,7 +232,7 @@ const educationsContainer = document.querySelector(".education-container");
  */
 educations.forEach((item, index) => {
     // Determine the column to which the education details will be appended based on the index.
-    const column = index < 6 ? document.querySelector(".education-column:first-child") : document.querySelector(".education-column:last-child");
+    const column = index < 7 ? document.querySelector(".education-column:first-child") : document.querySelector(".education-column:last-child");
     // Create elements for the education details.
     const details = document.createElement("details");
     const summary = document.createElement("summary");
