@@ -10,7 +10,7 @@
             "about": "Sobre Mi",
             "education": "Educación",
             "skills": "Habilidades",
-            "works": "Proyectos",
+            "works": "Experiencia",
             "contact": "Contacto"
         },
         "header": {
@@ -27,7 +27,8 @@
         "education": {
             "subtitle": "Educación",
             "title": "Pobre es Aquel que Carece de Conocimiento",
-            "text": "Soy graduado Magna Cum Laude de la Licenciatura en Informática por la Universidad Autónoma de Santo Domingo (UASD), con una sólida formación en fundamentos informáticos y habilidades técnicas. Además, he complementado mi educación con cursos especializados de instituciones reconocidas como MESCYT, Harvard, ITLA, Google y CISCO, etc. Mi pasión por el aprendizaje continuo me impulsa a mantenerme actualizado en las últimas tendencias tecnológicas y buscar constantemente desafíos que me permitan contribuir al mundo tecnológico en evolución."
+            "text": "Soy graduado Magna Cum Laude de la Licenciatura en Informática por la Universidad Autónoma de Santo Domingo (UASD), con una sólida formación en fundamentos informáticos y habilidades técnicas. Además, he complementado mi educación con cursos especializados de instituciones reconocidas como MESCYT, Harvard, ITLA, Google y CISCO, etc. Mi pasión por el aprendizaje continuo me impulsa a mantenerme actualizado en las últimas tendencias tecnológicas y buscar constantemente desafíos que me permitan contribuir al mundo tecnológico en evolución. Para ver toda mi formacion, dirigite a ",
+            "educational": "Mi Portafolio Educativo"
         },
         "skills": {
             "subtitle": "Habilidades",
@@ -37,7 +38,7 @@
             "tools": "Herramientas"
         },
         "works": {
-            "subtitle": "Mis Proyectos",
+            "subtitle": "Mi Experiencia",
             "title": "¡Mira mis proyectos que te sorprenderán!",
             "text": "He trabajado en varios proyectos como programador junior. Durante estos proyectos, he aprendido a desarrollar interfaces limpias y simples que son fáciles de entender para usuarios no técnicos. Mi enfoque ha sido crear sitios web de calidad que puedan funcionar a largo plazo, y he documentado cuidadosamente mi trabajo para seguir mejorando. Estoy emocionado por seguir creciendo como desarrollador y enfrentar nuevos desafíos en el futuro.",
             "project1": {
@@ -55,6 +56,36 @@
             "project4": {
                 "name": "AluraFlix",
                 "date": "Junio 2024"
+            },
+            "experience": "Mi Experiencia Laboral",
+            "experience1": {
+                "title": "Técnico de Recinto",
+                "place": "Junta Central Electoral"
+            }
+            ,
+            "experience2": {
+                "title": "Supervisor Técnico de Recinto",
+                "place": "Junta Central Electoral"
+            }
+            ,
+            "experience3": {
+                "title": "Tutorias de C# .Net",
+                "place": "Autónomo"
+            }
+            ,
+            "experience4": {
+                "title": "Tutorias de SQLite",
+                "place": "Autónomo"
+            }
+            ,
+            "experience5": {
+                "title": "Director de Informática",
+                "place": "Ayuntamiento de Castillo"
+            }
+            ,
+            "experience6": {
+                "title": "Auxiliar de Electromedicina",
+                "place": "Centro Médico Siglo 21"
             }
         },
         "contact": {
@@ -106,7 +137,8 @@
         "education": {
             "subtitle": "Education",
             "title": "Poor is the One Who Lacks Knowledge",
-            "text": "I am a Magna Cum Laude graduate of the Bachelor's Degree in Computer Science from the Autonomous University of Santo Domingo (UASD), with a solid background in computer science fundamentals and technical skills. In addition, I have complemented my education with specialized courses from recognized institutions such as MESCYT, Harvard, ITLA, Google and CISCO, etc. My passion for continuous learning drives me to stay up to date on the latest technological trends and constantly seek challenges that allow me to contribute to the evolving technological world."
+            "text": "I am a Magna Cum Laude graduate of the Bachelor's Degree in Computer Science from the Autonomous University of Santo Domingo (UASD), with a solid background in computer science fundamentals and technical skills. In addition, I have complemented my education with specialized courses from recognized institutions such as MESCYT, Harvard, ITLA, Google and CISCO, etc. My passion for continuous learning drives me to stay up to date on the latest technological trends and constantly seek challenges that allow me to contribute to the evolving technological world. To see all my training, go to ",
+            "educational": "My Educational Portfolio"
         },
         "skills": {
             "subtitle": "Skills",
@@ -134,6 +166,36 @@
             "project4": {
                 "name": "AluraFlix",
                 "date": "June 2024"
+            },
+            "experience": "My Work Experience",
+            "experience1": {
+                "title": "Facility Technician",
+                "place": "Central Electoral Board"
+            }
+            ,
+            "experience2": {
+                "title": "Technical Supervisor of the Facility",
+                "place": "Central Electoral Board"
+            }
+            ,
+            "experience3": {
+                "title": "C# .Net Tutorials",
+                "place": "Autonomous"
+            }
+            ,
+            "experience4": {
+                "title": "SQLite Tutorials",
+                "place": "Autonomous"
+            }
+            ,
+            "experience5": {
+                "title": "Director of IT",
+                "place": "Castillo Townhall"
+            }
+            ,
+            "experience6": {
+                "title": "Electromedicine Assistant",
+                "place": "Medical Center Siglo 21"
             }
         },
         "contact": {
