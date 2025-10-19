@@ -38,7 +38,10 @@ const skills = [
 const tools = [
     { name: ".NET", logo: "dotnet.png", alt: ".NET" },
     { name: "Git", logo: "git.png", alt: "Git" },
+    { name: "Windows", logo: "windows.png", alt: "Windows"},
     { name: "Linux", logo: "linux.png", alt: "Linux" },
+    { name: "Office", logo: "office.png", alt: "Office"},
+    { name: "Visual Studio", logo: "visualstudio.png", alt: "Visual Studio"},
     { name: "VS Code", logo: "vscode.png", alt: "VS Code" },
     { name: "Photoshop", logo: "photoshop.png", alt: "Photoshop" },
     { name: "Command Line", logo: "command-line.png", alt: "Command Line" },
