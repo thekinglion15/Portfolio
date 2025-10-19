@@ -151,7 +151,7 @@ body.active {
 
 .w-100 {
     opacity: 0;
-    width: 100%;
+    width: 60%;
     animation: imageAni 1s ease forwards;
     animation-delay: 1.5s;
 }
@@ -492,6 +492,14 @@ main {
     margin-bottom: 10px;
 }
 
+.about .download {
+    color: var(--color-primary);
+}
+
+.about .download:hover {
+    color: var(--bg-primary);
+}
+
 /* Education */
 .education {
     padding-block: var(--section-padding);
@@ -505,6 +513,16 @@ main {
 .education-column {
     padding: 5px;
     box-sizing: border-box;
+}
+
+.educational {
+    color: var(--color-primary);
+    display: inline;
+    font-weight: bold;
+}
+
+.educational:hover {
+    color: var(--color-secondary);
 }
 
 details {
@@ -707,6 +725,96 @@ summary img {
 
 .project-card:is(:hover, :focus) .publish-date {
     transition-delay: 0.1s;
+}
+
+.card-banner {
+    justify-items: center;
+}
+
+.experience {
+    margin-top: 40px;
+}
+
+.experience .h3 {
+    font-size: var(--fs-4);
+}
+
+.timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-step {
+    position: relative;
+    width: 100%;
+}
+
+.timeline-logo {
+    position: relative;
+    display: block;
+    width: 45px;
+    max-height: 45px;
+    height: auto;
+    margin: 0 auto;
+    transition: opacity .2s linear 0s;
+}
+
+.timeline-title {
+    position: relative;
+    display: none;
+    padding-top: 25px;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 1;
+    border-top: 3px solid var(--color-primary);
+    font-size: var(--fs-5);
+    font-weight: bold;
+    color: var(--color-primary);
+    font-family: var(--ff-poppins);
+}
+
+.timeline-place {
+    position: relative;
+    display: none;
+    padding-top: 6px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: var(--fs-6);
+    color: var(--color-secondary);
+    font-family: var(--ff-poppins);
+}
+
+.timeline-time {
+    position: relative;
+    display: none;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: var(--fs-6);
+    color: var(--color-secondary);
+    font-family: var(--ff-poppins);
+}
+
+.timeline-title::before,
+.timeline-title::after {
+    content: '';
+    position: absolute;
+    top: calc(11px/2 * -1 + -1px);
+    left: 50%;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+.timeline-title::before {
+    transform: translate(-50%);
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    z-index: 5;
 }
 
 /* Contact */
