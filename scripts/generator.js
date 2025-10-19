@@ -55,7 +55,7 @@ const tools = [
 const educations = [
     { logo: "uasd.png", institution: "UASD", programs: ["Licenciatura en Informática", "Diplomado en Ciberseguridad"]},
     { logo: "mescyt.png", institution: "MESCYT", programs: ["English Immersion Program"] },
-    { logo: startItla, institution: "ITLA", programs: ["Ethical Hacking", "C#.Net Intermedio", "Cisco Certified Network Associate 3"] },
+    { logo: startItla, institution: "ITLA", programs: ["Ethical Hacking", "C#.Net Intermedio", "Cisco Certified Network Associate 3", "Diplomado de Base de Datos SQL"] },
     { logo: "harvard.png", institution: "Harvard", programs: ["CS50x", "CS50's Introduction to Game Development", "CS50's Introduction to Programming with Python", "CS50's Introduction to Databases with SQL", "CS50's Understanding Technology"] },
     { logo: "google-activate.png", institution: "Google Activate", programs: ["Cloud Computing", "Desarrollo de Apps Móviles", "Introducción al Desarrollo Web I", "Introducción al Desarrollo Web II"] },
     { logo: "cisco.png", institution: "CISCO", programs: ["Junior Cybersecurity Analyst Career Path", "Network Technician Career Path", "Python Essentials 2", "JavaScript Essentials 2","English For IT 2", "Data Analytics Essentials", "Ethical Hacker"] },
@@ -79,6 +79,7 @@ const certificates = {
     "Ethical Hacking": "ethical_hacking.jpg",
     "C#.Net Intermedio": "csnet_intermedio.jpg",
     "Cisco Certified Network Associate 3": "ccna3.jpg",
+    "Diplomado de Base de Datos SQL": "base_de_datos_sql.jpg",
     "CS50x": "cs50x.png",
     "CS50's Introduction to Game Development": "cs50g.png",
     "CS50's Introduction to Programming with Python": "cs50p.png",
