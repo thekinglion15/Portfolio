@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="The King Lion">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Styles Sheets -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/animation.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="stylesheet" href="../styles/education.css">
+</head>
+<body id="top" class="dark_theme">
+    <!-- Header -->
+    <header class="header" data-header>
+        <!-- Navbar -->
+        <div class="container">
+            <!-- Logo -->
+            <p class="h1 logo">
+                <a href="../index.html">
+                    <img src="../assets/logos/logo2.png" id="logo-header" alt="The King Lion">
+                </a>
+            </p>
+            <!-- Language Selector -->
+            <div class="navbar-actions">
+                <label class="label-lang" for="lang" id="label-lang">Idioma</label>
+                <select name="language" id="lang" onchange="changeLanguage()">
+                    <option value="es" id="es">Español</option>
+		            <option value="en" id="en">Ingles</option>
+                </select>
+                <button class="theme-btn" aria-label="Cambiar tema" title="Cambiar tema" data-theme-btn>
+                    <span class="icon"></span>
+                </button>
+            </div>
+            <!-- Toggle Button -->
+            <button class="nav-toggle-btn" aria-label="Toggle menu" title="Toggle menu" data-nav-toggle-btn>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+            <!-- Menu -->
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list" data-nav-link>
+                    <li><a href="#home" class="navbar-link active" id="nav1" style="--navAni:1">Inicio</a></li>
+                    <li><a href="#about" class="navbar-link" id="nav2" style="--navAni:2">Sobre Mi</a></li>
+                    <li><a href="#education" class="navbar-link" id="nav3" style="--navAni:3">Educación</a></li>
+                    <li><a href="#skills" class="navbar-link" id="nav4" style="--navAni:4">Habilidades</a></li>
+                    <li><a href="#works" class="navbar-link" id="nav5" style="--navAni:5">Proyectos</a></li>
+                    <li><a href="#contact" class="navbar-link" id="nav6" style="--navAni:6">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="body">
+        <article class="container-education">
+            <section class="education">
+                <h2 class="institution-title">UASD</h2>
+                <div class="institution">
+                    <div class="certification">
+                        <div class="certificate">
+                            <img src="image/image1.jpeg" alt="Image 1">
+                        </div>
+                        <div class="certificate-title">
+                            <h2>Card One</h2>
+                        </div>
+                    </div>
+                    <div class="certification">
+                        <div class="certificate">
+                            <img src="image/image3.jpeg" alt="Image 1">
+                        </div>
+                        <div class="certificate-title">
+                            <h2>Especialidad en Habilitación Docente para el Nivel Tecnico Superior, Mencion Informatica y Comunicaciones</h2>
+                        </div>
+                    </div>
+                    <div class="certification">
+                        <div class="certificate">
+                            <img src="image/image2.jpeg" alt="Image 1">
+                        </div>
+                        <div class="certificate-title">
+                            <h2>English Immersion Program</h2>
+                        </div>
+                    </div>
+                    <div class="certification">
+                        <div class="certificate">
+                            <img src="image/image2.jpeg" alt="Image 1">
+                        </div>
+                        <div class="certificate-title">
+                            <h2>Licenciatura en Informática</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="education">
+                <h2 class="institution-title">UASD</h2>
+                <div class="institution">
+                    <div class="certification">
+                        <div class="certificate">
+                            <img src="image/image2.jpeg" alt="Image 1">
+                        </div>
+                        <div class="certificate-title">
+                            <h2>Card One</h2>
+                        </div>
+                    </div>
+                    <div class="certification">
+                        <div class="certificate">
+                            <img src="image/image3.jpeg" alt="Image 1">
+                        </div>
+                        <div class="certificate-title">
+                            <h2>English Immersion Program</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="h1 logo">
+                <a href="../index.html">
+                    <img src="../assets/logos/logo2.png" id="logo-footer" alt="The King Lion">
+                </a>
+            </p>
+            <p class="copyright">
+                <span>
+                    &copy; <span id="year"></span>
+                    <a href="#">The King Lion</a>.
+                    <span id="copyright">Todos los derechos reservados.</span>
+                </span>
+            </p>
+        </div>
+    </footer>
+    <a href="#top" class="go-top" data-go-top title="Go to top">
+        <i class="bi-arrow-up"></i>
+    </a>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-body">
+                <img id="modal-image" src="" alt="Program Image">
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../scripts/features.js"></script>
+    <script src="../scripts/languages.js"></script>
+</body>
+</html>
