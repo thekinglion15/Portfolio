@@ -8,7 +8,7 @@ let languages = {};
  * Loads data from the languages.json file and updates the interface with the selected language.
  */
 function loadLanguage() {
-    fetch("assets/languages.json").then(response => response.json()).then(data => {
+    fetch("../assets/languages.json").then(response => response.json()).then(data => {
         languages = data;
         changeLanguage();
     }).catch(error => console.log("Error:", error));
@@ -82,7 +82,12 @@ function setAboutLang(about) {
 function setEducationLang(education) {
     document.getElementById("education-subtitle").innerText = education.subtitle;
     document.getElementById("education-title").innerText = education.title;
-    document.getElementById("education-text").innerText = education.text;
+    
+    const p = document.getElementById("education-text");
+    const a = document.getElementById("educational");
+
+    p.childNodes[0].textContent = education.text;
+    a.innerText = education.educational;
 }
 
 /**
@@ -126,6 +131,19 @@ function setWorksLang(works) {
     document.getElementById("project3-date").innerText = works.project3.date;
     document.getElementById("project4-name").innerText = works.project4.name;
     document.getElementById("project4-date").innerText = works.project4.date;
+    document.getElementById("experience").innerText = works.experience;
+    document.getElementById("experience1-title").innerText = works.experience1.title;
+    document.getElementById("experience1-place").innerText = works.experience1.place;
+    document.getElementById("experience2-title").innerText = works.experience2.title;
+    document.getElementById("experience2-place").innerText = works.experience2.place;
+    document.getElementById("experience3-title").innerText = works.experience3.title;
+    document.getElementById("experience3-place").innerText = works.experience3.place;
+    document.getElementById("experience4-title").innerText = works.experience4.title;
+    document.getElementById("experience4-place").innerText = works.experience4.place;
+    document.getElementById("experience5-title").innerText = works.experience5.title;
+    document.getElementById("experience5-place").innerText = works.experience5.place;
+    document.getElementById("experience6-title").innerText = works.experience6.title;
+    document.getElementById("experience6-place").innerText = works.experience6.place;
 }
 
 /**
