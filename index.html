@@ -28,10 +28,10 @@
             </p>
             <!-- Language Selector -->
             <div class="navbar-actions">
-                <label class="label-lang" for="lang" id="label-lang">Language</label>
+                <label class="label-lang" for="lang" id="label-lang">Idioma</label>
                 <select name="language" id="lang" onchange="changeLanguage()">
-                    <option value="en" id="en">English</option>
                     <option value="es" id="es">Español</option>
+		            <option value="en" id="en">Ingles</option>
                 </select>
                 <button class="theme-btn" aria-label="Cambiar tema" title="Cambiar tema" data-theme-btn>
                     <span class="icon"></span>
@@ -46,12 +46,12 @@
             <!-- Menu -->
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list" data-nav-link>
-                    <li><a href="#home" class="navbar-link active" id="nav1" style="--navAni:1">Home</a></li>
-                    <li><a href="#about" class="navbar-link" id="nav2" style="--navAni:2">About</a></li>
-                    <li><a href="#education" class="navbar-link" id="nav3" style="--navAni:3">Education</a></li>
-                    <li><a href="#skills" class="navbar-link" id="nav4" style="--navAni:4">Skills</a></li>
-                    <li><a href="#works" class="navbar-link" id="nav5" style="--navAni:5">Works</a></li>
-                    <li><a href="#contact" class="navbar-link" id="nav6" style="--navAni:6">Contact</a></li>
+                    <li><a href="#home" class="navbar-link active" id="nav1" style="--navAni:1">Inicio</a></li>
+                    <li><a href="#about" class="navbar-link" id="nav2" style="--navAni:2">Sobre Mi</a></li>
+                    <li><a href="#education" class="navbar-link" id="nav3" style="--navAni:3">Educación</a></li>
+                    <li><a href="#skills" class="navbar-link" id="nav4" style="--navAni:4">Habilidades</a></li>
+                    <li><a href="#works" class="navbar-link" id="nav5" style="--navAni:5">Experiencia</a></li>
+                    <li><a href="#contact" class="navbar-link" id="nav6" style="--navAni:6">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,9 +69,9 @@
                     </picture>
                 </figure>
                 <div class="hero-content">
-                    <h3 class="h3 hero-title hi" id="hi">Hi, It's Me</h3>
+                    <h3 class="h3 hero-title hi" id="hi">Hola, Soy Yo</h3>
                     <h2 class="h2 hero-title name">Gabriel De León</h2>
-                    <a href="#contact" class="btn btn-primary a" id="touch">Get in touch</a>
+                    <a href="#contact" class="btn btn-primary a" id="touch">Ponte en contacto</a>
                 </div>
             </section>
             <!-- About -->
@@ -80,21 +80,22 @@
                     <img src="assets/images/about-banner.png" alt="Profile photo" class="w-100">
                 </figure>
                 <div class="about-content section-content">
-                    <p class="section-subtitle" id="about-subtitle">About Me</p>
-                    <h2 class="h3 section-title" id="about-title">From Ideas to Realities</h2>
+                    <p class="section-subtitle" id="about-subtitle">Sobre mi</p>
+                    <h2 class="h3 section-title" id="about-title">De las Ideas a las Realidades</h2>
                     <p class="section-text" id="about-text">
-                        Hello, I'm Gabriel De León, with an unstoppable passion for C# and web development,
-                        I turn ideas into impactful realities with creative solutions. Always thirsty for
-                        knowledge, I venture into new territories learning skills, tools, and concepts.
-                        My powers are not limited to development; I also master the arts of databases, the
-                        snake language (Python), and cybersecurity. Get ready to be impressed by my skills!
+                        Hola, soy Gabriel De León, con una pasión imparable por C# y el desarrollo web,
+                        convierto ideas en realidades impactantes con soluciones creativas. Siempre
+                        sediento de conocimiento, me aventuro a nuevos territorios aprendiendo
+                        habilidades, herramientas y conceptos. Mis poderes no se limitan al desarrollo;
+                        También domino las artes de las bases de datos, el lenguaje serpiente (Python)
+                        y la ciberseguridad. ¡Prepárate para quedar impresionado por mis habilidades!
                     </p>
                     <div class="btn-group">
                         <button class="btn btn-secondary">
-                            <a href="#contact" style="color: white;" id="hire">Hire me</a>
+                            <a href="#contact" style="color: white;" id="hire">Contratame</a>
                         </button>
-                        <button>
-                            <a class="btn btn-primary" id="download" href="assets/cv.pdf" download="cv.pdf">Download CV</a>
+                        <button class="btn btn-primary">
+                            <a class="download" id="download" href="assets/cv.pdf" targe="_blank" download="cv.pdf">Descargar CV</a>
                         </button>
                     </div>
                 </div>
@@ -102,16 +103,17 @@
             <!-- Education -->
             <section class="education" id="education">
                 <div class="education-content section-content">
-                    <p class="section-subtitle" id="education-subtitle">Education</p>
-                    <h2 class="h3 section-title" id="education-title">Poor is the One Who Lacks Knowledge</h2>
+                    <p class="section-subtitle" id="education-subtitle">Educación</p>
+                    <h2 class="h3 section-title" id="education-title">Pobre es Aquel que Carece de Conocimiento</h2>
                     <p class="section-text" id="education-text">
-                        I am a Magna Cum Laude graduate of the Bachelor's Degree in Computer Science from the
-                        Autonomous University of Santo Domingo (UASD), with a solid background in computer
-                        science fundamentals and technical skills. In addition, I have complemented my education
-                        with specialized courses from recognized institutions such as MESCYT, Harvard, ITLA, Google
-                        and CISCO, etc. My passion for continuous learning drives me to stay up to date on the latest
-                        technological trends and constantly seek challenges that allow me to contribute to the
-                        evolving technological world.
+                        Soy graduado Magna Cum Laude de la Licenciatura en Informática por la Universidad
+                        Autónoma de Santo Domingo (UASD), con una sólida formación en fundamentos
+                        informáticos y habilidades técnicas. Además, he complementado mi educación con
+                        cursos especializados de instituciones reconocidas como MESCYT, Harvard, ITLA,
+                        Google y CISCO, etc. Mi pasión por el aprendizaje continuo me impulsa a
+                        mantenerme actualizado en las últimas tendencias tecnológicas y buscar
+                        constantemente desafíos que me permitan contribuir al mundo tecnológico en
+                        evolución. Para ver toda mi formacion, dirigite a <a id="educational" class="educational" href="pages/education.html">Mi Portafolio Educativo</a>.
                     </p>
                 </div>
                 <!-- Generated by generator.js-->
@@ -123,15 +125,15 @@
             <!-- Skills -->
             <section class="skills" id="skills">
                 <div class="skills-content section-content">
-                    <p class="section-subtitle" id="skills-subtitle">Skills</p>
-                    <h2 class="h3 section-title" id="skills-title">What are my Programming Skills?</h2>
+                    <p class="section-subtitle" id="skills-subtitle">Habilidades</p>
+                    <h2 class="h3 section-title" id="skills-title">¿Cuáles son mis Habilidades de Programación?</h2>
                     <p class="section-text" id="skills-text">
-                        I specialize in designing simple, user-centered and adaptable interfaces
-                        that speed up the execution of tasks, using these technologies.
+                        Me especializo en diseñar interfaces sencillas, centradas en el usuario y
+                        adaptables que agilizan la ejecución de tareas, utilizando estas tecnologías.
                     </p>
                     <div class="skills-toggle" data-toggle-box>
-                        <button class="toggle-btn active" id="skills-skills" data-toggle-btn>Skills</button>
-                        <button class="toggle-btn" id="skills-tools" data-toggle-btn>Tools</button>
+                        <button class="toggle-btn active" id="skills-skills" data-toggle-btn>Habilidades</button>
+                        <button class="toggle-btn" id="skills-tools" data-toggle-btn>Herramientas</button>
                     </div>
                 </div>
                 <!-- Generated by generator.js-->
@@ -145,15 +147,16 @@
                 <ul class="work-list">
                     <li>
                         <div class="work-content section-content">
-                            <p class="section-subtitle" id="works-subtitle">My Works</p>
-                            <h2 class="h3 section-title" id="works-title">View my projects that will astonish you!</h2>
+                            <p class="section-subtitle" id="works-subtitle">Mi Experiencia</p>
+                            <h2 class="h3 section-title" id="works-title">¡Mira mis proyectos que te sorprenderán!</h2>
                             <p class="section-text" id="works-text">
-                                I have worked on several projects as a junior programmer. During these projects,
-                                I have learned to develop clean and simple interfaces that are easy to understand
-                                for non-technical users. My focus has been on creating quality websites that can
-                                perform over the long term, and I have carefully documented my work to continue
-                                improving. I'm excited to continue growing as a developer and take on new
-                                challenges in the future.
+                                He trabajado en varios proyectos como programador junior. Durante estos
+                                proyectos, he aprendido a desarrollar interfaces limpias y simples que
+                                son fáciles de entender para usuarios no técnicos. Mi enfoque ha sido
+                                crear sitios web de calidad que puedan funcionar a largo plazo, y he
+                                documentado cuidadosamente mi trabajo para seguir mejorando. Estoy
+                                emocionado por seguir creciendo como desarrollador y enfrentar nuevos
+                                desafíos en el futuro.
                             </p>
                         </div>
                     </li>
@@ -163,8 +166,8 @@
                                 <img src="assets/images/textencryptor.png" alt="Badge Text Encryptor" class="w-100">
                             </figure>
                             <div class="card-content">
-                                <h3 class="h4 card-title" id="project1-name">Text Encryptor</h3>
-                                <time class="publish-date" datetime="2022-04" id="project1-date">January 2024</time>
+                                <h3 class="h4 card-title" id="project1-name">Encriptador de Texto</h3>
+                                <time class="publish-date" datetime="2022-04" id="project1-date">Enero 2024</time>
                             </div>
                         </a>
                     </li>
@@ -174,8 +177,8 @@
                                 <img src="assets/images/portfolio.png" alt="Badge Portfolio" class="w-100">
                             </figure>
                             <div class="card-content">
-                                <h3 class="h4 card-title" id="project2-name">Portfolio</h3>
-                                <time class="publish-date" datetime="2022-04" id="project2-date">April 2024</time>
+                                <h3 class="h4 card-title" id="project2-name">Portafolio</h3>
+                                <time class="publish-date" datetime="2022-04" id="project2-date">Abril 2024</time>
                             </div>
                         </a>
                     </li>
@@ -186,7 +189,7 @@
                             </figure>
                             <div class="card-content">
                                 <h3 class="h4 card-title" id="project3-name">AluraGeek</h3>
-                                <time class="publish-date" datetime="2022-04" id="project3-date">May 2024</time>
+                                <time class="publish-date" datetime="2022-04" id="project3-date">Mayo 2024</time>
                             </div>
                         </a>
                     </li>
@@ -197,20 +200,72 @@
                             </figure>
                             <div class="card-content">
                                 <h3 class="h4 card-title" id="project4-name">AluraFlix</h3>
-                                <time class="publish-date" datetime="2022-04" id="project4-date">June 2024</time>
+                                <time class="publish-date" datetime="2022-04" id="project4-date">Junio 2024</time>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/thekinglion15/PersonalBudget#" target="_blank" class="project-card">
+                            <figure class="card-banner">
+                                <img src="assets/images/personalbudget.png" alt="Personal Budget" class="w-100">
+                            </figure>
+                            <div class="card-content">
+                                <h3 class="h4 card-title" id="project4-name">Personal Budget</h3>
+                                <time class="publish-date" datetime="2022-04" id="project4-date">Diciembre 2024</time>
                             </div>
                         </a>
                     </li>
                 </ul>
+                <div class="section-content experience">
+                    <h2 class="h3 section-title" id="experience">Mi Experiencia Laboral</h2>
+                    <div class="timeline">
+                        <div class="timeline-step">
+                            <img src="assets/logos/jce.png" alt="Junta Central Electoral" class="timeline-logo">
+                            <p class="timeline-title" id="experience1-title">Técnico de Recinto</p>
+                            <p class="timeline-place" id="experience1-place">Junta Central Electoral</p>
+                            <p class="timeline-time">10/2019 - 07/2020</p>
+                        </div>
+                        <div class="timeline-step">
+                            <img src="assets/logos/jce.png" alt="Junta Central Electoral" class="timeline-logo">
+                            <p class="timeline-title" id="experience2-title">Supervisor Técnico de Recinto</p>
+                            <p class="timeline-place" id="experience2-place">Junta Central Electoral</p>
+                            <p class="timeline-time">10/2023 - 05/2024</p>
+                        </div>
+                        <div class="timeline-step">
+                            <img src="assets/logos/csharp.png" alt="C#" class="timeline-logo">
+                            <p class="timeline-title" id="experience3-title">Tutorias de C# .Net</p>
+                            <p class="timeline-place" id="experience3-place">Autónomo</p>
+                            <p class="timeline-time">03/2024 - Actual</p>
+                        </div>
+                        <div class="timeline-step">
+                            <img src="assets/logos/sqlite.png" alt="SQLite" class="timeline-logo">
+                            <p class="timeline-title" id="experience4-title">Tutorias de SQLite</p>
+                            <p class="timeline-place" id="experience4-place">Autónomo</p>
+                            <p class="timeline-time">10/2019 - 07/2020</p>
+                        </div>
+                        <div class="timeline-step">
+                            <img src="assets/logos/ayuntamiento.png" alt="Ayuntamiento de Castillo" class="timeline-logo">
+                            <p class="timeline-title" id="experience5-title">Director de Informática</p>
+                            <p class="timeline-place" id="experience5-place">Ayuntamiento de Castillo</p>
+                            <p class="timeline-time">01/2021 - Actual</p>
+                        </div>
+                        <div class="timeline-step">
+                            <img src="assets/logos/siglo21.png" alt="Centro Médico Siglo 21" class="timeline-logo">
+                            <p class="timeline-title" id="experience6-title">Auxiliar de Electromedicina</p>
+                            <p class="timeline-place" id="experience6-place">Centro Médico Siglo 21</p>
+                            <p class="timeline-time">04/2024 - Actual</p>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- Contact -->
             <section class="contact" id="contact">
                 <div class="contact-content section-content">
-                    <p class="section-subtitle" id="contact-subtitle">Contact</p>
-                    <h2 class="h3 section-title" id="contact-title">Do You Need Help? Contact Me</h2>
+                    <p class="section-subtitle" id="contact-subtitle">Contacto</p>
+                    <h2 class="h3 section-title" id="contact-title">¿Necesitas Ayuda? Contáctame</h2>
                     <p class="section-text" id="contact-text">
-                        Get in touch and let me know how i can help. Fill out the form and i’ll
-                        be in touch as soon as possible.
+                        Ponte en contacto y déjame saber cómo puedo ayudarte. Complete el formulario y me
+                        pondré en contacto lo antes posible.
                     </p>
                     <ul class="contact-list">
                         <li class="contact-list-item">
@@ -218,9 +273,9 @@
                                 <i class="bi-geo-alt"></i>
                             </div>
                             <div class="wrapper">
-                                <h3 class="h4 contact-item-title" id="contact-address">Address:</h3>
+                                <h3 class="h4 contact-item-title" id="contact-address">Dirección:</h3>
                                 <address class="contact-info" id="contact-address-me">
-                                    Castillo, Province Duarte, Dominican Republic
+                                    Castillo, Provincia Duarte, República Dominicana
                                 </address>
                             </div>
                         </li>
@@ -229,7 +284,7 @@
                                 <i class="bi-telephone"></i>
                             </div>
                             <div class="wrapper">
-                                <h3 class="h4 contact-item-title" id="contact-phone">Phone:</h3>
+                                <h3 class="h4 contact-item-title" id="contact-phone">Teléfono:</h3>
                                 <a href="tel:0123456789" class="contact-info">(829) 770-0018</a>
                                 <a href="tel:9876543210" class="contact-info">(809) 899-3671</a>
                             </div>
@@ -239,12 +294,18 @@
                                 <i class="bi-envelope-at"></i>
                             </div>
                             <div class="wrapper">
-                                <h3 class="h4 contact-item-title" id="contact-email">Email:</h3>
+                                <h3 class="h4 contact-item-title" id="contact-email">Correo Electrónico:</h3>
                                 <a href="mailto:asd@asd.com" class="contact-info">gabrieldeleon1500@gmail.com</a>
                             </div>
                         </li>
                         <li>
                             <ul class="contact-social-list">
+                                <li>
+                                    <a href="https://api.whatsapp.com/send?phone=18098993671" class="contact-social-link" target="_blank">
+                                        <div class="tooltip">WhatsApp</div>
+                                        <i class="bi-whatsapp"></i>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="https://www.linkedin.com/in/gabrieldeleon15/" class="contact-social-link" target="_blank">
                                         <div class="tooltip">LinkedIn</div>
@@ -264,34 +325,34 @@
                 <!-- Form -->
                 <form class="contact-form">
                     <div class="form-wrapper">
-                        <label for="name" class="form-label" id="form-name">Name</label>
+                        <label for="name" class="form-label" id="form-name">Nombre</label>
                         <div class="input-wrapper">
                             <input type="text" name="name" class="input-field" id="name" placeholder="John Johnson" required>
                             <i class="bi-person-circle"></i>
                         </div>
                     </div>
                     <div class="form-wrapper">
-                        <label for="email" class="form-label" id="form-email">Email</label>
+                        <label for="email" class="form-label" id="form-email">Correo Electrónico</label>
                         <div class="input-wrapper">
                             <input type="email" name="email" class="input-field" id="email" placeholder="johnjohnson@gmail.com" required>
                             <i class="bi-envelope-fill"></i>
                         </div>
                     </div>
                     <div class="form-wrapper">
-                        <label for="phone" class="form-label" id="form-phone">Phone</label>
+                        <label for="phone" class="form-label" id="form-phone">Teléfono</label>
                         <div class="input-wrapper">
                             <input type="tel" name="phone" class="input-field" id="phone" placeholder="(809) 000-1111" required>
                             <i class="bi-telephone-fill"></i>
                         </div>
                     </div>
                     <div class="form-wrapper">
-                        <label for="message" class="form-label" id="form-message">Message</label>
+                        <label for="message" class="form-label" id="form-message">Mensaje</label>
                         <div class="input-wrapper">
-                            <textarea name="message" class="input-field" id="message" placeholder="Write message..." required></textarea>
+                            <textarea name="message" class="input-field" id="message" placeholder="Escribe el mensaje..." required></textarea>
                             <i class="bi-chat-fill"></i>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="form-send">Send</button>
+                    <button type="submit" class="btn btn-primary" id="form-send">Enviar</button>
                 </form>
             </section>
         </article>
@@ -308,7 +369,7 @@
                 <span>
                     &copy; <span id="year"></span>
                     <a href="#">The King Lion</a>.
-                    <span id="copyright">All rights reserved.</span>
+                    <span id="copyright">Todos los derechos reservados.</span>
                 </span>
             </p>
         </div>
