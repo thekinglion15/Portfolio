@@ -59,8 +59,10 @@ function setNavbarLang(navbar) {
  * @param {object} header - Object containing the language data for header elements.
  */
 function setHeaderLang(header) {
-    document.getElementById("hi").innerText = header.hi;
-    document.getElementById("touch").innerText = header.touch;
+    if(document.querySelector(".hi")) {
+        document.getElementById("hi").innerText = header.hi;
+        document.getElementById("touch").innerText = header.touch;
+    }
 }
 
 /**
