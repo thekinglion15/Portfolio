@@ -2,6 +2,12 @@
     #label-lang {
         visibility: hidden;
     }
+    .hero img {
+        margin-inline: auto;
+    }
+    .about img {
+        margin-inline: auto;
+    }
     .summary-title {
         visibility: hidden;
     }
@@ -35,6 +41,12 @@
 @media (min-width: 550px) {
     .container {
         max-width: 550px;
+        margin-inline: auto;
+    }
+    .hero img {
+        margin-inline: auto;
+    }
+    .about img {
         margin-inline: auto;
     }
     .section-title {
