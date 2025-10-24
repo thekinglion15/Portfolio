@@ -7,6 +7,7 @@ startMaria = localStorage.getItem("theme") === "dark_theme" ? "mariadb-dark.png"
 startItla = localStorage.getItem("theme") === "dark_theme" ? "itla-dark.png" : "itla-light.png";
 startFree = localStorage.getItem("theme") === "dark_theme" ? "freecodecamp-dark.png" : "freecodecamp-light.png";
 startEfset = localStorage.getItem("theme") === "dark_theme" ? "efset-dark.png" : "efset-light.png";
+startAsp = localStorage.getItem("theme") === "dark_theme" ? "asp-dark.png" : "asp-light.png";
 
 /**
  * Contains an array of skills with their respective logos and alternative text.
@@ -50,101 +51,241 @@ const tools = [
 ];
 
 /**
- * Contains an array of educational institutions with their respective logos, names, and programs.
+ * Contains an array of educational institutions with their respective logos, names, and certificates.
  */
 const educations = [
-    { logo: "uasd.png", institution: "UASD", programs: ["Licenciatura en Informática", "Diplomado en Ciberseguridad"]},
-    { logo: "mescyt.png", institution: "MESCYT", programs: ["English Immersion Program"] },
-    { logo: startItla, institution: "ITLA", programs: ["Ethical Hacking", "C#.Net Intermedio", "Cisco Certified Network Associate 3", "Diplomado de Base de Datos SQL"] },
-    { logo: "harvard.png", institution: "Harvard", programs: ["CS50x", "CS50's Introduction to Game Development", "CS50's Introduction to Programming with Python", "CS50's Introduction to Databases with SQL", "CS50's Understanding Technology"] },
-    { logo: "google-activate.png", institution: "Google Activate", programs: ["Cloud Computing", "Desarrollo de Apps Móviles", "Introducción al Desarrollo Web I", "Introducción al Desarrollo Web II"] },
-    { logo: "cisco.png", institution: "CISCO", programs: ["Junior Cybersecurity Analyst Career Path", "Network Technician Career Path", "Python Essentials 2", "JavaScript Essentials 2","English For IT 2", "Data Analytics Essentials", "Ethical Hacker"] },
-    { logo: startFree, institution: "freeCodeCamp", programs: ["Responsive Web Design", "Front End Development Libraries", "Foundational C#"] },
-    { logo: "uteco.png", institution: "UTECO", programs: ["Especialidad en Habilitación Docente Modalidad Técnico-Profesional, para el Nivel Secundario, Mención Informática y Comunicaciones"] },
-    { logo: "microsoft.png", institution: "Microsoft Certified Educator", programs: ["Technology Literacy for Educators - 21st Century Learning Design"] },
-    { logo: "oracle-one.png", institution: "Oracle ONE", programs: ["Programa Oracle Next Education", "React G6 - ONE", "Front End G6 - ONE", "SQL con MySQL Server de Oracle - ONE", "Oracle Cloud Infrastructure - ONE", "IA Generativa - ONE", "Explora React con JavaScript", "Lógica de programación con JavaScript", "Principiante en Programación G6 - ONE"] },
-    { logo: startEfset, institution: "EF SET", programs: ["EF SET Certificate"] },
-    { logo: "aprende.png", institution: "Aprende", programs: ["Diplomado Técnico en sistemas informáticos", "Diplomado Técnico instalador de red de acceso", "Diplomado Técnico en Redes"] },
-    { logo: "linkedin-learning.png", institution: "LinkedIn Learning", programs: ["Fundamentos de la carrera de administración de sistemas", "Fundamentos profesionales de analisis empresarial", "Fundamentos profesionales de asistencia administrativa", "Fundamentos profesionales de gestión de proyectos", "Fundamentos profesionales de IA generativa", "Fundamentos profesionales del analisis de datos", "Fundamentos profesionales del desarrollo de software", "Fundamentos profesionales en ciberseguridad", "Fundamentos profesionales tecnología sostenible", "Desarrolla tus habilidades de productividad con IA generativa"] },
-    { logo: "sololearn.png", institution: "SoloLearn", programs: ["C Intermediate", "C# Intermediate", "C++ Intermediate", "Java Intermediate", "JavaScript Intermediate", "SQL Intermediate", "Intermediate Python", "Coding Foundations", "Data Programming", "Responsive Web Design", "Web Development", "Web Developer with Angular", "Tech for Everyone", "Ruby", "Kotlin", "PHP", "HTML", "CSS", "Angular", "Go", "Swift 4"] }
-];
+    {
+        institution: "UASD", logo: "uasd.png",
+        certificates: [
+            { name: "Licenciatura en Informática", image: "uasd_01.png" },
+            { name: "Diplomado en Ciberseguridad", image: "uasd_02.jpg" }]
+    },
+    { 
+        institution: "UTECO", logo: "uteco.png",
+        certificates: [
+            { name: "Especialidad en Habilitación Docente Modalidad Técnico-Profesional, para el Nivel Secundario, Mención Informática y Comunicaciones", image: "uteco_01.jpg" }]
+    },
+    {
+        institution: "MESCYT", logo: "mescyt.png",
+        certificates: [
+            { name: "English Immersion Program", image: "mescyt_01.jpg" }]
+    },
+    { 
+        institution: "Microsoft Certified Educator", logo: "microsoft.png",
+        certificates: [
+            { name: "Technology Literacy for Educators - 21st Century Learning Design", image: "mce_01.jpg" }]
+    },
+    { 
+        institution: "ITLA", logo: startItla,
+        certificates: [
+            { name: "Diplomado de Base de Datos SQL", image: "itla_01.jpg" },
+            { name: "C#.Net Intermedio", image: "itla_02.jpg"},
+            { name: "Ethical Hacking", image: "itla_03.jpg" },
+            { name: "Cisco Certified Network Associate 3", image: "itla_04.jpg" }]
 
-/**
- * Contains an array of educational certificates.
- */
-const certificates = {
-    "Licenciatura en Informática": "uasd_bachelor.png",
-    "Diplomado en Ciberseguridad": "ciberseguridad_uasd.jpg",
-    "English Immersion Program": "eip.jpg",
-    "Ethical Hacking": "ethical_hacking.jpg",
-    "C#.Net Intermedio": "csnet_intermedio.jpg",
-    "Cisco Certified Network Associate 3": "ccna3.jpg",
-    "Diplomado de Base de Datos SQL": "base_de_datos_sql.jpg",
-    "CS50x": "cs50x.png",
-    "CS50's Introduction to Game Development": "cs50g.png",
-    "CS50's Introduction to Programming with Python": "cs50p.png",
-    "CS50's Introduction to Databases with SQL": "cs50sql.png",
-    "CS50's Understanding Technology": "cs50t.png",
-    "Cloud Computing": "cloud_computing.jpg",
-    "Desarrollo de Apps Móviles": "desarrollo_de_apps_moviles.jpg",
-    "Introducción al Desarrollo Web I": "desarrollo_web1.jpg",
-    "Introducción al Desarrollo Web II": "desarrollo_web2.jpg",
-    "Junior Cybersecurity Analyst Career Path": "junior_cybersecurity_analyst.jpg",
-    "Network Technician Career Path": "network_technician.jpg",
-    "Python Essentials 2": "python_essentials2.jpg",
-    "JavaScript Essentials 2": "javascript_essentials2.jpg",
-    "English For IT 2": "english_for_it2.jpg",
-    "Data Analytics Essentials": "data_analytics_essentials.jpg",
-    "Ethical Hacker": "ethical_hacker.jpg",
-    "Especialidad en Habilitación Docente Modalidad Técnico-Profesional, para el Nivel Secundario, Mención Informática y Comunicaciones": "",
-    "Technology Literacy for Educators - 21st Century Learning Design": "mce.jpg",
-    "Programa Oracle Next Education": "programa_one.jpg",
-    "Principiante en Programación G6 - ONE": "principiante_en_programacion.jpg",
-    "React G6 - ONE": "react.jpg",
-    "Front End G6 - ONE": "front_end.jpg",
-    "SQL con MySQL Server de Oracle - ONE": "sql_con_mysql_server.jpg",
-    "Oracle Cloud Infrastructure - ONE": "oracle_cloud_infrastructure.jpg",
-    "IA Generativa - ONE" : "ia_generativa_one.jpg",
-    "Explora React con JavaScript": "react_con_javascript.jpg",
-    "Lógica de programación con JavaScript": "logica_de_programacion.jpg",
-    "Responsive Web Design": "responsive_web_design_free.jpg",
-    "Front End Development Libraries": "front_end_development_libraries.jpg",
-    "Foundational C#": "foundational_cs.jpg",
-    "EF SET Certificate": "efset_certificate.jpg",
-    "Diplomado Técnico en sistemas informáticos": "tecnico_en_sistemas_informaticos.jpg",
-    "Diplomado Técnico instalador de red de acceso": "tecnico_instalador_de_red_de_acceso.jpg",
-    "Diplomado Técnico en Redes": "tecnico_en_redes.jpg",
-    "Fundamentos de la carrera de administración de sistemas": "administracion_de_sistemas.jpg",
-    "Fundamentos profesionales de analisis empresarial": "analisis_empresarial.jpg",
-    "Fundamentos profesionales de asistencia administrativa": "asistencia_administrativa.jpg",
-    "Fundamentos profesionales de gestión de proyectos": "gestion_de_proyectos.jpg",
-    "Fundamentos profesionales de IA generativa": "ia_generativa.jpg",
-    "Fundamentos profesionales del analisis de datos": "analisis_de_datos.jpg",
-    "Fundamentos profesionales del desarrollo de software": "desarrollo_de_software.jpg",
-    "Fundamentos profesionales en ciberseguridad": "ciberseguridad.jpg",
-    "Fundamentos profesionales tecnología sostenible": "tecnologia_sostenible.jpg",
-    "Desarrolla tus habilidades de productividad con IA generativa": "habilidades_de_productividad_con_ia_generativa.jpg",
-    "C Intermediate": "c_intermediate.jpg",
-    "C# Intermediate": "cs_intermediate.jpg",
-    "C++ Intermediate": "cpp_intermediate.jpg",
-    "Java Intermediate": "java_intermediate.jpg",
-    "JavaScript Intermediate": "js_intermediate.jpg",
-    "SQL Intermediate": "sql_intermediate.jpg",
-    "Intermediate Python": "intermediate_python.jpg",
-    "Coding Foundations": "coding_foundations.jpg",
-    "Data Programming": "data_programming.jpg",
-    "Web Development": "web_development.jpg",
-    "Web Developer with Angular": "web_developer_with_angular.jpg",
-    "Tech for Everyone": "tech_for_everyone.jpg",
-    "Ruby": "ruby.jpg",
-    "Kotlin": "kotlin.jpg",
-    "PHP": "php.jpg",
-    "HTML": "html.jpg",
-    "CSS": "css.jpg",
-    "Angular": "angular.jpg",
-    "Go": "go.jpg",
-    "Swift 4": "swift.jpg"
-};
+    },
+    {
+        institution: "Harvard", logo: "harvard.png",
+        certificates: [
+            { name: "CS50x" , image: "harvard_01.png"}, 
+            { name: "CS50's Introduction to Databases with SQL", image: "harvard_02.png" },
+            { name: "CS50's Introduction to Programming with Python", image: "harvard_03.png" },
+            { name: "CS50's Introduction to Game Development", image: "harvard_04.png" },
+            { name: "CS50's Understanding Technology", image: "harvard_05.png" }]
+    },
+    {
+        institution: "Google Activate", logo: "google-activate.png",
+        certificates: [
+            { name: "Cloud Computing", image: "ga_01.jpg" },
+            { name: "Desarrollo de Apps Móviles", image: "ga_02.jpg" },
+            { name: "Introducción al Desarrollo Web I", image: "ga_03.jpg" },
+            { name: "Introducción al Desarrollo Web II", image: "ga_04.jpg" }]
+    },
+    {
+        institution: "CISCO", logo: "cisco.png",
+        certificates: [
+            { name: "Junior Cybersecurity Analyst Career Path", image: "cisco_01.jpg" },
+            { name: "Network Technician Career Path", image: "cisco_02.jpg" },
+            { name: "Python Essentials 2", image: "cisco_03.jpg" },
+            { name: "English For IT 2", image: "cisco_04.jpg" },
+            { name: "JavaScript Essentials 2", image: "cisco_05.jpg" },
+            { name: "Data Analytics Essentials", image: "cisco_06.jpg" },
+            { name: "Ethical Hacker", image: "cisco_07.jpg" },
+            { name: "Endpoint Security", image: "cisco_08.jpg" },
+            { name: "Cyber Threat Management", image: "cisco_09.jpg" },
+            { name: "Cybersecurity Essentials", image: "cisco_10.jpg" },
+            { name: "Network Defense", image: "cisco_11.jpg" },
+            { name: "Network Support and Security", image: "cisco_12.jpg" },
+            { name: "Network Addressing and Basic Troubleshooting", image: "cisco_13.jpg" },
+            { name: "Networking Devices and Initial Configuration", image: "cisco_14.jpg" },
+            { name: "Operating Systems Basics", image: "cisco_15.jpg" },
+            { name: "Introduction to IoT", image: "cisco_16.jpg" }]
+    },
+    {
+        institution: "freeCodeCamp", logo: startFree,
+        certificates: [
+            { name: "Responsive Web Design", image: "fcc_01.jpg" },
+            { name: "Front End Development Libraries", image: "fcc_02.jpg" },
+            { name: "Foundational C#", image: "fcc_03.jpg" }]
+    },
+    {
+        institution: "Oracle", logo: "oracle.png",
+        certificates: [
+            { name: "Programa Oracle Next Education", image: "oracle_01.jpg" },
+            { name: "SQL con MySQL Server de Oracle - ONE", image: "oracle_02.jpg" },
+            { name: "Front End G6 - ONE", image: "oracle_03.jpg" },
+            { name: "React G6 - ONE", image: "oracle_04.jpg" },
+            { name: "Oracle Cloud Infrastructure - ONE", image: "oracle_05.jpg" },
+            { name: "IA Generativa - ONE", image: "oracle_06.jpg" },
+            { name: "Desarrollo Personal G6 - ONE", image: "oracle_07.jpg" },
+            { name: "Principiante en Programación G6 - ONE", image: "oracle_08.jpg" },
+            { name: "Emprendimiento, Agilidad y Protagonismo Profesional G6 - ONE", image: "oracle_09.jpg" }]
+    },
+    {
+        institution: "EF SET", logo: startEfset,
+        certificates: [
+            { name: "EF SET Certificate", image: "efset_01.png" }]
+    },
+    {
+        institution: "Aprende", logo: "aprende.png",
+        certificates: [
+            { name: "Diplomado Técnico en sistemas informáticos", image: "aprende_01.jpg" },
+            { name: "Diplomado Técnico instalador de red de acceso", image: "aprende_02.jpg" },
+            { name: "Diplomado Técnico en redes", image: "aprende_03.jpg" },
+            { name: "Administrador de bases de datos", image: "aprende_04.jpg" },
+            { name: "Desarrollador Front-end", image: "aprende_05.jpg" },
+            { name: "Desarrollador Back-end", image: "aprende_06.jpg" },
+            { name: "Electricista", image: "aprende_07.jpg" },
+            { name: "Cómo utilizar la computadora", image: "aprende_08.jpg" },
+            { name: "Prácticas de ofimática", image: "aprende_09.jpg" },
+            { name: "Prácticas de mecanografía", image: "aprende_10.jpg" },
+            { name: "Técnico en informática (Ofimática)", image: "aprende_11.jpg" },
+            { name: "Finanzas personales", image: "aprende_12.jpg" }]
+    },
+    {
+        institution: "LinkedIn Learning", logo: "linkedin-learning.png",
+        certificates: [
+            { name: "Fundamentos profesionales del desarrollo de software", image: "linkedin_01.jpg" },
+            { name: "Fundamentos de la carrera de administración de sistemas", image: "linkedin_02.jpg" },
+            { name: "Fundamentos profesionales en ciberseguridad", image: "linkedin_03.jpg" },
+            { name: "Fundamentos profesionales de gestión de proyectos", image: "linkedin_04.jpg" },
+            { name: "Fundamentos profesionales del analisis de datos", image: "linkedin_05.jpg" },
+            { name: "Fundamentos profesionales de asistencia administrativa", image: "linkedin_06.jpg" },
+            { name: "Fundamentos profesionales de IA generativa", image: "linkedin_07.jpg" },
+            { name: "Fundamentos profesionales de analisis empresarial", image: "linkedin_08.jpg" },
+            { name: "Fundamentos profesionales tecnología sostenible", image: "linkedin_09.jpg" },
+            { name: "Desarrolla tus habilidades de productividad con IA generativa", image: "linkedin_10.jpg" },
+            { name: "Microsoft Copilot para seguridad", image: "linkedin_11.jpg" }]
+    },
+    {
+        institution: "SoloLearn", logo: "sololearn.png",
+        certificates: [
+            { name: "C# Intermediate", image: "sololearn_01.jpg" },
+            { name: "SQL Intermediate", image: "sololearn_02.jpg" },
+            { name: "C Intermediate", image: "sololearn_03.jpg" },
+            { name: "C++ Intermediate", image: "sololearn_04.jpg" },
+            { name: "Java Intermediate", image: "sololearn_05.jpg" },
+            { name: "JavaScript Intermediate", image: "sololearn_06.jpg" },
+            { name: "Intermediate Python", image: "sololearn_07.jpg" },
+            { name: "Python Data Structures", image: "sololearn_08.jpg" },
+            { name: "Python for Data Science", image: "sololearn_09.jpg" },
+            { name: "Coding Foundations", image: "sololearn_10.jpg" },
+            { name: "Data Programming", image: "sololearn_11.jpg" },
+            { name: "Responsive Web Design", image: "sololearn_12.jpg" },
+            { name: "Web Development", image: "sololearn_13.jpg" },
+            { name: "Web Developer with Angular", image: "sololearn_14.jpg" },
+            { name: "Tech for Everyone", image: "sololearn_15.jpg" },
+            { name: "HTML", image: "sololearn_16.jpg" },
+            { name: "CSS", image: "sololearn_17.jpg" },
+            { name: "Angular", image: "sololearn_18.jpg" },
+            { name: "Ruby", image: "sololearn_19.jpg" },
+            { name: "Kotlin", image: "sololearn_20.jpg" },
+            { name: "PHP", image: "sololearn_21.jpg" },
+            { name: "Go", image: "sololearn_22.jpg" },
+            { name: "R", image: "sololearn_23.jpg" },
+            { name: "Swift 4", image: "sololearn_24.jpg" }]
+    },
+    {
+        institution: "Alura", logo: "alura.png",
+        certificates: [
+            { name: "SQL con MySQL", image: "alura_01.jpg" },
+            { name: "Masterclass Front-End", image: "alura_02.jpg" },
+            { name: "Masterclass Power BI", image: "alura_03.jpg" },
+            { name: "Inmersion IA", image: "alura_04.jpg" },
+            { name: "Semana Carrera Tech IA", image: "alura_05.jpg" },
+            { name: "Mi Carrera", image: "alura_06.jpg" },
+            { name: "Excel", image: "alura_07.jpg" },
+            { name: "Excel VBA", image: "alura_08.jpg" },
+            { name: "Excel con IA: Usando IA's como Asistentes", image: "alura_09.jpg" },
+            { name: "Explora React con JavaScript", image: "alura_10.jpg" },
+            { name: "Nivelación TypeScript y React - Alura Boost", image: "alura_11.jpg" },
+            { name: "Inteligencia artificial y Java - Crea herramientas poderosas con las APIs de OpenAI", image: "alura_12.jpg" },
+            { name: "Jornada de IA para Desarrolladores", image: "alura_13.jpg" },
+            { name: "Desde cero - HTML y CSS para proyectos Web", image: "alura_14.jpg" },
+            { name: "Lógica de programación con JavaScript", image: "alura_15.jpg" },
+            { name: "Comenzando en Inteligencia Artificial (IA)", image: "alura_16.jpg" }]
+    },
+    {
+        institution: "Escuela Vocacional de las FFAA y PN", logo: "vocacional.png",
+        certificates: [
+            { name: "Electricidad Residencial", image: "vocacional_01.jpg" }]
+    },
+    {
+        institution: "INFOTEP", logo: "infotep.png",
+        certificates: [
+            { name: "Instalaciones Básicas de Redes Electricas Residenciales", image: "infotep_01.png" },
+            { name: "Servicio al cliente", image: "infotep_02.png" }]
+    },
+    {
+        institution: "BanReservas", logo: "banreservas.png",
+        certificates: [
+            { name: "Educación Financiera Preserva", image: "banreservas_01.jpg" }]
+    },
+    {
+        institution: "Escuela SB", logo: "escuela_sb.png",
+        certificates: [
+            { name: "Ahorro - Concepto e Instrumentos", image: "sb_01.jpg" },
+            { name: "Planicacion y presupuesto", image: "sb_02.jpg" },
+            { name: "Prestamos y tarjetas de credito", image: "sb_03.jpg" },
+            { name: "Quien protege tus derechos financieros", image: "sb_04.jpg" }]
+    },
+    {
+        institution: "Finanzas con Proposito", logo: "fcp.png",
+        certificates: [
+            { name: "Aprendiendo a Ahorrar con Propósito", image: "fcp_01.jpg" },
+            { name: "Presupuesto, La Clave Para Tu Transformación Financiera", image: "fcp_02.jpg" },
+            { name: "La Tarjeta de Crédito, Su Próposito de Usos y Beneficios", image: "fcp_03.jpg" },
+            { name: "Certificación Finanzas Básicas Popular", image: "fcp_04.jpg" }]
+    },
+    {
+        institution: "ED Team", logo: "ed_team.png",
+        certificates: [
+            { name: "La ruta del desarrollador web", image: "ed_01.jpg" },
+            { name: "Markdown desde cero", image: "ed_02.jpg" },
+            { name: "Introduccion a la Programacion Orientada a Objetos", image: "ed_03.jpg" },
+            { name: "Introducción a la terminal", image: "ed_04.jpg" },
+            { name: "Introduccion a Api Rest", image: "ed_05.jpg" }]
+    },
+    {
+        institution: "INAP", logo: "inap.png",
+        certificates: [
+            { name: "Excel Básico", image: "inap_01.jpg" },
+            { name: "Ortografía y Redacción", image: "inap_02.jpg" },
+            { name: "Técnicas de Archivo", image: "inap_03.jpg" },
+            { name: "Manejo Efectivo del Tiempo", image: "inap_04.jpg" },
+            { name: "Inteligencia Emocional", image: "inap_05.jpg" }]
+    },
+    {
+        institution: "Advanced Sterilization Products", logo: startAsp,
+        certificates: [
+            { name: "Estrategias para un Monitoreo Eficaz", image: "asp_01.jpg" }]
+    },
+    {
+        institution: "CISA", logo: "cisa.png",
+        certificates: [
+            { name: "Desinfección de Alto Nivel", image: "cisa_01.jpg" }]
+    },
+];
 
 /**
  * Enables the theme toggle functionality.
@@ -158,9 +299,9 @@ themeToggle.addEventListener("click", function () {
     // Array containing logo filenames for theme change.
     const logosChange = [
         "mysql-dark.png", "mongodb-dark.png", "mariadb-dark.png",
-        "itla-dark.png", "freecodecamp-dark.png", "efset-dark.png",
+        "itla-dark.png", "freecodecamp-dark.png", "efset-dark.png", "asp-dark.png",
         "mysql-light.png", "mongodb-light.png", "mariadb-light.png",
-        "itla-light.png", "freecodecamp-light.png", "efset-light.png"
+        "itla-light.png", "freecodecamp-light.png", "efset-light.png", "asp-light.png"
     ];
     // Updates logos for skills based on the current theme.
     skills.forEach(skill => {
@@ -170,7 +311,7 @@ themeToggle.addEventListener("click", function () {
             // Updates the logo image on the corresponding card.
             const cardIcon = document.querySelector(`[alt="${skill.alt}"]`);
             if(cardIcon)
-                cardIcon.src = `assets/logos/${original}`;
+                cardIcon.src = `../assets/logos/${original}`;
         }
     });
     // Updates logos for educations based on the current theme.
@@ -181,7 +322,7 @@ themeToggle.addEventListener("click", function () {
             // Updates the logo image on the corresponding card.
             const cardIcon = document.querySelector(`[alt="${education.institution}"]`);
             if (cardIcon)
-                cardIcon.src = `assets/logos/${original}`;
+                cardIcon.src = `../assets/logos/${original}`;
         }
     });
 });
@@ -202,7 +343,7 @@ function createSkillCard(skill) {
     div.innerHTML = `
         <div class="tooltip">${skill.name}</div>
         <div class="card-icon">
-            <img src="assets/logos/${skill.logo}" alt="${skill.alt}">
+            <img src="../assets/logos/${skill.logo}" alt="${skill.alt}">
         </div>
     `;
     li.appendChild(div);
@@ -222,10 +363,13 @@ function generateSkillsList(data, list) {
 }
 
 // Generating and appending the skills list to the skills list element.
-generateSkillsList(skills, skillsList);
+if(typeof skills !== "undefined" && typeof skillsList !== "undefined" && skillsList) {
+    generateSkillsList(skills, skillsList);
+}
 // Generating and appending the tools list to the tools list element.
-generateSkillsList(tools, toolsList);
-
+if(typeof tools !== "undefined" && typeof toolsList !== "undefined" && toolsList) {
+    generateSkillsList(tools, toolsList);
+}
 
 // Selecting the education container element from the DOM
 const educationsContainer = document.querySelector(".education-container");
@@ -234,44 +378,132 @@ const educationsContainer = document.querySelector(".education-container");
  * Generates and appends education details to the appropriate column in the education container.
  * @param {Array} educations - An array of education objects containing logo, institution, and programs attributes.
  */
-educations.forEach((item, index) => {
-    // Determine the column to which the education details will be appended based on the index.
-    const column = index < 7 ? document.querySelector(".education-column:first-child") : document.querySelector(".education-column:last-child");
-    // Create elements for the education details.
-    const details = document.createElement("details");
-    const summary = document.createElement("summary");
-    const img = document.createElement("img");
-    const title = document.createElement("span");
-    const content = document.createElement("div");
+const showOnly = [
+    "UASD", "MESCYT", "ITLA", "Harvard", "Google Activate",
+    "CISCO", "freeCodeCamp", "UTECO", "Microsoft Certified Educator",
+    "Oracle", "EF SET", "Aprende", "LinkedIn Learning", "SoloLearn"
+];
+const filteredEducations = educations.filter(inst => showOnly.includes(inst.institution));
 
-    // Set attributes and content for the created elements.
-    img.src = `assets/logos/${item.logo}`;
-    img.alt = item.institution;
-    title.className = "summary-title";
-    title.textContent = item.institution;
-    content.className = "details-content";
+if(typeof educations !== "undefined" && document.querySelector(".education-column")) {
+    filteredEducations.forEach((item, index) => {
+        // Determine the column to which the education details will be appended based on the index.
+        const column = index < 7 ? document.querySelector(".education-column:first-child") : document.querySelector(".education-column:last-child");
+        // Create elements for the education details.
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        const img = document.createElement("img");
+        const title = document.createElement("span");
+        const content = document.createElement("div");
 
-    // Generate program paragraphs and append them to the content div.
-    item.programs.forEach((program) => {
-        const p = document.createElement("p");
-        p.textContent = `● ${program}`;
-        p.classList.add("program");
+        // Set attributes and content for the created elements.
+        img.src = `../assets/logos/${item.logo}`;
+        img.alt = item.institution;
+        title.className = "summary-title";
+        title.textContent = item.institution;
+        content.className = "details-content";
 
-        p.addEventListener("click", () => {;
-            openModal(program, certificates[program], item.logo, item.institution);
+        // Generate certificate paragraphs and append them to the content div.
+        item.certificates.forEach(cert => {
+            const p = document.createElement("p");
+            p.textContent = `● ${cert.name}`;
+            p.classList.add("program");
+
+            p.addEventListener("click", () => {;
+                openModal(cert.name, cert.image, item.logo, item.institution);
+            });
+
+            content.appendChild(p);
         });
 
-        content.appendChild(p);
+        // Append created elements to the details element.
+        summary.appendChild(img);
+        summary.appendChild(title);
+        details.appendChild(summary);
+        details.appendChild(content);
+        // Append the details element to the appropriate column in the container.
+        column.appendChild(details);
     });
+}
 
-    // Append created elements to the details element.
-    summary.appendChild(img);
-    summary.appendChild(title);
-    details.appendChild(summary);
-    details.appendChild(content);
-    // Append the details element to the appropriate column in the container.
-    column.appendChild(details);
-});
+// Selecting the education container element from the DOM
+const certificateContainer = document.querySelector(".container-education");
+
+/**
+ * Generate and add the certificates to the corresponding education container.
+ * @param {Array} educations - An array of education objects containing logo, institution, and programs attributes.
+ */
+if(typeof educations !== "undefined" && document.querySelector(".container-education")) {
+    educations.forEach(item => {
+        // Create the institution section
+        const section = document.createElement("section");
+        section.classList.add("education");
+
+        // Name of the institution
+        const title = document.createElement("h2");
+        title.classList.add("institution-title");
+
+        const titleContainer = document.createElement("div");
+        titleContainer.classList.add("title-container");
+
+        const logo = document.createElement("img");
+        logo.src = `../assets/logos/${item.logo}`;
+        logo.alt = item.institution;
+        logo.classList.add("institution-logo");
+
+        const spanTitle = document.createElement("span");
+        spanTitle.textContent = item.institution;
+
+        titleContainer.appendChild(logo);
+        titleContainer.appendChild(spanTitle);
+
+        title.appendChild(titleContainer);
+        section.appendChild(title);
+
+        // Certificate container
+        const institutionDiv = document.createElement("div");
+        institutionDiv.classList.add("institution");
+
+        // Explore the programs of that institution
+        item.certificates.forEach(cert => {
+            const certificationDiv = document.createElement("div");
+            certificationDiv.classList.add("certification");
+
+            // Certificate image
+            const certificateDiv = document.createElement("div");
+            certificateDiv.classList.add("certificate");
+
+            const certImg = document.createElement("img");
+            //const imageName = certificates[program];
+            certImg.src = `../assets/education/${item.institution}/${cert.image}`;
+            certImg.alt = cert.name;
+            certificateDiv.appendChild(certImg);
+
+            // Nombre del certificado
+            const certificateBox = document.createElement("div");
+            certificateBox.classList.add("certificate-box");
+
+            const programTitle = document.createElement("h2");
+            programTitle.textContent = cert.name;
+            certificateBox.appendChild(programTitle);
+
+            // Add everything inside .certification
+            certificationDiv.appendChild(certificateDiv);
+            certificationDiv.appendChild(certificateBox);
+
+            certificationDiv.addEventListener("click", () => {
+                openModal(cert.name, cert.image, item.logo, item.institution);
+            });
+
+            institutionDiv.appendChild(certificationDiv);
+        });
+
+        // Add to section
+        section.appendChild(institutionDiv);
+        // Add to general container
+        certificateContainer.appendChild(section);
+    });
+}
 
 /**
  * Initializes accordion functionality for all 'details' elements on the page.
@@ -288,9 +520,10 @@ const modalTitle = document.getElementById("modal-title");
 const modalImage = document.getElementById("modal-image");
 const closeButton = document.querySelector(".close");
 
-function openModal(program, imageUrl, iconUrl, institution) {
-    modalTitle.innerHTML = `<img src="assets/logos/${iconUrl}" alt="${institution}">${program}`;
-    modalImage.src = `assets/education/${imageUrl}`;
+function openModal(cert, image, icon, institution) {
+    modalTitle.innerHTML = `<img src="../assets/logos/${icon}" alt="${institution}">${cert}`;
+    modalImage.src = `../assets/education/${institution}/${image}`;
+    modalImage.alt = cert;
     modal.style.display = "block";
 }
 
